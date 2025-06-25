@@ -76,51 +76,88 @@
             box-shadow: 0 4px 15px rgba(90,103,216,0.3);
         }
 
-        .day-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-
-        .day-card {
+        .day-selector {
             background: white;
             border-radius: 15px;
-            padding: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
             text-align: center;
+        }
+
+        .day-selector h3 {
+            margin-bottom: 25px;
+            color: #5a67d8;
+            font-size: 1.3em;
+        }
+
+        .day-control {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .arrow-btn {
+            background: linear-gradient(135deg, #5a67d8, #667eea);
+            color: white;
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 1.5em;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-            border: 3px solid transparent;
+            box-shadow: 0 4px 15px rgba(90,103,216,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .day-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-            border-color: #5a67d8;
+        .arrow-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(90,103,216,0.4);
         }
 
-        .day-card.selected {
-            border-color: #5a67d8;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+        .arrow-btn:active {
+            transform: translateY(-1px);
+        }
+
+        .arrow-btn:disabled {
+            background: #cbd5e0;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .day-display {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
+            padding: 25px;
+            border-radius: 20px;
+            min-width: 200px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
         }
 
         .day-title {
-            font-size: 1.5em;
+            font-size: 2.2em;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
-        .day-progress {
+        .day-info {
             font-size: 0.9em;
-            margin-bottom: 5px;
+        }
+
+        .day-progress, .day-rounds {
+            margin-bottom: 8px;
         }
 
         .progress-bar {
             width: 100%;
             height: 8px;
-            background: #e2e8f0;
+            background: rgba(255,255,255,0.3);
             border-radius: 4px;
             overflow: hidden;
             margin: 8px 0;
@@ -128,16 +165,8 @@
 
         .progress-fill {
             height: 100%;
-            background: linear-gradient(90deg, #48bb78, #38b2ac);
-            transition: width 0.3s ease;
-        }
-
-        .day-card.selected .progress-bar {
-            background: rgba(255,255,255,0.3);
-        }
-
-        .day-card.selected .progress-fill {
             background: rgba(255,255,255,0.8);
+            transition: width 0.3s ease;
         }
 
         .start-btn {
@@ -339,11 +368,25 @@
                 </div>
             </div>
 
-            <div class="day-grid" id="dayGrid">
-                <!-- Day cards will be generated here -->
+            <div class="day-selector">
+                <h3>📅 학습할 Day 선택</h3>
+                <div class="day-control">
+                    <button class="arrow-btn" id="prevDay">←</button>
+                    <div class="day-display">
+                        <div class="day-title" id="currentDayTitle">DAY 1</div>
+                        <div class="day-info">
+                            <div class="day-progress" id="currentDayProgress">진도: 0%</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="currentProgressFill" style="width: 0%"></div>
+                            </div>
+                            <div class="day-rounds" id="currentDayRounds">회독: 0회</div>
+                        </div>
+                    </div>
+                    <button class="arrow-btn" id="nextDay">→</button>
+                </div>
             </div>
 
-            <button class="start-btn" id="startBtn" disabled>학습 시작</button>
+            <button class="start-btn" id="startBtn">학습 시작</button>
         </div>
 
         <div id="quizContainer" class="quiz-container">
@@ -399,11 +442,157 @@
 
         // 앱 상태
         let currentMode = 'russian';
-        let selectedDay = null;
+        let selectedDay = 1; // 기본값을 1로 설정
         let currentWords = [];
         let currentQuestionIndex = 0;
         let correctAnswers = 0;
         let dayProgress = {};
+        let sessionId = null; // 세션 ID 추가
+
+        // Day 선택 관련 함수들
+        function updateDayDisplay() {
+            document.getElementById('currentDayTitle').textContent = `DAY ${selectedDay}`;
+            
+            const progress = dayProgress[selectedDay] || { progress: 0, rounds: 0 };
+            document.getElementById('currentDayProgress').textContent = `진도: ${progress.progress}%`;
+            document.getElementById('currentDayRounds').textContent = `회독: ${progress.rounds}회`;
+            document.getElementById('currentProgressFill').style.width = `${progress.progress}%`;
+            
+            // 화살표 버튼 활성화/비활성화
+            document.getElementById('prevDay').disabled = selectedDay <= 1;
+            document.getElementById('nextDay').disabled = selectedDay >= 20;
+        }
+
+        // 이전 Day
+        document.getElementById('prevDay').addEventListener('click', () => {
+            if (selectedDay > 1) {
+                selectedDay--;
+                updateDayDisplay();
+            }
+        });
+
+        // 다음 Day
+        document.getElementById('nextDay').addEventListener('click', () => {
+            if (selectedDay < 20) {
+                selectedDay++;
+                updateDayDisplay();
+            }
+        });
+
+        // 로그인 확인
+        function checkLogin() {
+            const saved = localStorage.getItem('korvoca_session');
+            if (saved) {
+                sessionId = saved;
+                showMainApp();
+            } else {
+                showLoginScreen();
+            }
+        }
+
+        // 로그인 화면 표시
+        function showLoginScreen() {
+            document.getElementById('mainMenu').style.display = 'none';
+            document.getElementById('quizContainer').style.display = 'none';
+            document.getElementById('resultContainer').style.display = 'none';
+            
+            // 로그인 화면이 없으면 생성
+            if (!document.getElementById('loginContainer')) {
+                const loginHtml = `
+                    <div id="loginContainer" class="quiz-container" style="display: block; max-width: 400px; margin: 100px auto;">
+                        <h2 style="text-align: center; margin-bottom: 30px; color: #5a67d8;">🔐 KorVoca 로그인</h2>
+                        <form id="loginForm">
+                            <div style="margin-bottom: 20px;">
+                                <label style="display: block; margin-bottom: 8px; font-weight: bold;">아이디:</label>
+                                <input type="text" id="username" required style="width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 16px;">
+                            </div>
+                            <div style="margin-bottom: 30px;">
+                                <label style="display: block; margin-bottom: 8px; font-weight: bold;">비밀번호:</label>
+                                <input type="password" id="password" required style="width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 16px;">
+                            </div>
+                            <button type="submit" class="start-btn" style="width: 100%;">로그인</button>
+                        </form>
+                        <div id="loginError" style="color: red; text-align: center; margin-top: 15px; display: none;"></div>
+                    </div>
+                `;
+                document.querySelector('.container').insertAdjacentHTML('beforeend', loginHtml);
+                
+                // 로그인 폼 이벤트
+                document.getElementById('loginForm').addEventListener('submit', handleLogin);
+            } else {
+                document.getElementById('loginContainer').style.display = 'block';
+            }
+        }
+
+        // 메인 앱 표시
+        function showMainApp() {
+            if (document.getElementById('loginContainer')) {
+                document.getElementById('loginContainer').style.display = 'none';
+            }
+            document.getElementById('mainMenu').style.display = 'block';
+            loadProgress();
+            updateDayDisplay(); // Day 선택기 초기화
+        }
+
+        // 로그인 처리
+        async function handleLogin(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorDiv = document.getElementById('loginError');
+            
+            try {
+                const response = await fetch('/api/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ username, password })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    sessionId = result.sessionId;
+                    localStorage.setItem('korvoca_session', sessionId);
+                    showMainApp();
+                    loadProgress();
+                    generateDayCards();
+                } else {
+                    errorDiv.textContent = result.error;
+                    errorDiv.style.display = 'block';
+                }
+                
+            } catch (error) {
+                errorDiv.textContent = '로그인 중 오류가 발생했습니다.';
+                errorDiv.style.display = 'block';
+                console.error('로그인 오류:', error);
+            }
+        }
+
+        // API 요청에 세션 ID 추가
+        async function apiRequest(url, options = {}) {
+            const headers = {
+                'x-session-id': sessionId,
+                ...options.headers
+            };
+            
+            const response = await fetch(url, {
+                ...options,
+                headers
+            });
+            
+            if (response.status === 401) {
+                // 세션 만료
+                localStorage.removeItem('korvoca_session');
+                sessionId = null;
+                showLoginScreen();
+                throw new Error('세션이 만료되었습니다. 다시 로그인해주세요.');
+            }
+            
+            return response;
+        }
 
         // 로컬 스토리지에서 진도 불러오기
         function loadProgress() {
@@ -423,40 +612,17 @@
             localStorage.setItem('korvoca_progress', JSON.stringify(dayProgress));
         }
 
-        // Day 카드 생성
+        // Day 카드 생성 (더 이상 사용하지 않음)
         function generateDayCards() {
-            const dayGrid = document.getElementById('dayGrid');
-            dayGrid.innerHTML = '';
-
-            for (let i = 1; i <= 20; i++) {
-                const progress = dayProgress[i] || { progress: 0, rounds: 0 };
-                const card = document.createElement('div');
-                card.className = 'day-card';
-                card.dataset.day = i;
-                
-                card.innerHTML = `
-                    <div class="day-title">Day ${i}</div>
-                    <div class="day-progress">진도: ${progress.progress}%</div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: ${progress.progress}%"></div>
-                    </div>
-                    <div class="day-progress">회독: ${progress.rounds}회</div>
-                `;
-
-                card.addEventListener('click', () => selectDay(i));
-                dayGrid.appendChild(card);
-            }
+            // 새로운 UI에서는 사용하지 않음
+            updateDayDisplay();
         }
 
-        // Day 선택
+        // Day 선택 (더 이상 사용하지 않음)
         function selectDay(day) {
-            document.querySelectorAll('.day-card').forEach(card => {
-                card.classList.remove('selected');
-            });
-            
-            document.querySelector(`[data-day="${day}"]`).classList.add('selected');
+            // 새로운 UI에서는 화살표로 선택
             selectedDay = day;
-            document.getElementById('startBtn').disabled = false;
+            updateDayDisplay();
         }
 
         // 모드 선택
@@ -475,11 +641,11 @@
             if (!selectedDay) return;
 
             try {
-                // 서버 API를 통해 JSON 데이터 로드
+                // 서버 API를 통해 JSON 데이터 로드 (인증 포함)
                 const apiUrl = `/api/day/${selectedDay}`;
                 console.log(`로딩 중: Day ${selectedDay} 데이터`);
                 
-                const response = await fetch(apiUrl);
+                const response = await apiRequest(apiUrl);
                 
                 if (!response.ok) {
                     throw new Error(`HTTP ${response.status}: ${response.statusText}`);
@@ -626,14 +792,14 @@
         document.getElementById('backBtn').addEventListener('click', () => {
             document.getElementById('quizContainer').style.display = 'none';
             document.getElementById('mainMenu').style.display = 'block';
-            generateDayCards(); // 진도 업데이트 반영
+            updateDayDisplay(); // 진도 업데이트 반영
         });
 
         // 다시 시작 버튼
         document.getElementById('restartBtn').addEventListener('click', () => {
             document.getElementById('resultContainer').style.display = 'none';
             document.getElementById('mainMenu').style.display = 'block';
-            generateDayCards(); // 진도 업데이트 반영
+            updateDayDisplay(); // 진도 업데이트 반영
         });
 
         // 유틸리티 함수들
@@ -651,8 +817,7 @@
 
         // 앱 초기화
         function initApp() {
-            loadProgress();
-            generateDayCards();
+            checkLogin(); // 로그인 확인부터 시작
         }
 
         // 앱 시작
