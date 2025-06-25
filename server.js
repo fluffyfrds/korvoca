@@ -6,6 +6,9 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+console.log(`🔧 환경변수 PORT: ${process.env.PORT}`);
+console.log(`🔧 사용할 PORT: ${PORT}`);
+
 // CORS 설정
 app.use(cors());
 app.use(express.json());
@@ -97,10 +100,10 @@ app.get('/', (req, res) => {
 });
 
 // 서버 시작
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`🚀 KorVoca 서버가 실행되었습니다!`);
-    console.log(`📱 웹 앱 주소: http://localhost:${PORT}`);
-    console.log(`📊 API 엔드포인트: http://localhost:${PORT}/api/day/1`);
+    console.log(`📱 웹 앱 주소: http://0.0.0.0:${PORT}`);
+    console.log(`📊 API 엔드포인트: http://0.0.0.0:${PORT}/api/day/1`);
     console.log(`📁 JSON 파일 위치: ${path.join(__dirname, 'json')}`);
     
     // 사용 가능한 JSON 파일 확인
