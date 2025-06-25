@@ -4,15 +4,15 @@ const fs = require('fs');
 const cors = require('cors');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-// CORS 설정 (다른 도메인에서 접근 허용)
+// CORS 설정
 app.use(cors());
 
-// 정적 파일 서빙 (HTML, CSS, JS)
+// 정적 파일 서빙
 app.use(express.static('.'));
 
-// JSON 파일 API 엔드포인트
+// JSON 파일 API (인증 제거)
 app.get('/api/day/:dayNumber', (req, res) => {
     const dayNumber = req.params.dayNumber;
     const jsonPath = path.join(__dirname, 'json', `day${dayNumber}.json`);
@@ -20,7 +20,6 @@ app.get('/api/day/:dayNumber', (req, res) => {
     console.log(`요청: Day ${dayNumber} 데이터`);
     console.log(`파일 경로: ${jsonPath}`);
     
-    // 파일 존재 확인
     if (!fs.existsSync(jsonPath)) {
         console.log(`파일 없음: day${dayNumber}.json`);
         return res.status(404).json({ 
@@ -43,7 +42,7 @@ app.get('/api/day/:dayNumber', (req, res) => {
     }
 });
 
-// 사용 가능한 Day 목록 API
+// 사용 가능한 Day 목록 API (인증 제거)
 app.get('/api/days', (req, res) => {
     const jsonDir = path.join(__dirname, 'json');
     
