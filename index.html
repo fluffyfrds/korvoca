@@ -773,6 +773,9 @@
             }
             saveProgress();
 
+            // 카카오톡 알림 전송
+            sendStudyResult(selectedDay, percentage, currentWords.length, correctAnswers);
+
             document.getElementById('quizContainer').style.display = 'none';
             document.getElementById('resultContainer').style.display = 'block';
             
@@ -786,6 +789,33 @@
             else message = '더 연습해보세요! 💪';
             
             document.getElementById('resultMessage').textContent = message;
+        }
+
+        // 학습 결과를 서버로 전송 (카카오톡 알림용)
+        async function sendStudyResult(day, percentage, totalQuestions, correctAnswers) {
+            try {
+                const response = await fetch('/api/study-result', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        day: day,
+                        score: percentage,
+                        totalQuestions: totalQuestions,
+                        correctAnswers: correctAnswers,
+                        username: '와이프' // 또는 사용자 이름 입력 기능 추가 가능
+                    })
+                });
+
+                if (response.ok) {
+                    console.log('학습 결과 알림 전송 완료');
+                } else {
+                    console.log('알림 전송 실패 (서버 오류)');
+                }
+            } catch (error) {
+                console.log('알림 전송 실패 (네트워크 오류):', error);
+            }
         }
 
         // 돌아가기 버튼

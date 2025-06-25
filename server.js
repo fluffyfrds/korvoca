@@ -8,11 +8,40 @@ const PORT = process.env.PORT || 3000;
 
 // CORS 설정
 app.use(cors());
+app.use(express.json());
 
 // 정적 파일 서빙
 app.use(express.static('.'));
 
-// JSON 파일 API (인증 제거)
+// 학습 결과 저장 API (임시로 카카오톡 기능 제거)
+app.post('/api/study-result', async (req, res) => {
+    const { day, score, totalQuestions, correctAnswers, username } = req.body;
+    
+    try {
+        const percentage = Math.round((correctAnswers / totalQuestions) * 100);
+        const now = new Date();
+        const timeStr = now.toLocaleString('ko-KR', { 
+            timeZone: 'Asia/Seoul',
+            year: 'numeric',
+            month: 'long', 
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+        
+        console.log(`📊 학습 완료: ${username || '사용자'} - Day ${day}, 점수: ${percentage}% (${correctAnswers}/${totalQuestions}), 시간: ${timeStr}`);
+        
+        // TODO: 나중에 카카오톡 메시지 기능 추가
+        
+        res.json({ success: true, message: '학습 결과가 기록되었습니다.' });
+        
+    } catch (error) {
+        console.error('학습 결과 처리 오류:', error);
+        res.status(500).json({ error: '학습 결과 처리 중 오류가 발생했습니다.' });
+    }
+});
+
+// JSON 파일 API
 app.get('/api/day/:dayNumber', (req, res) => {
     const dayNumber = req.params.dayNumber;
     const jsonPath = path.join(__dirname, 'json', `day${dayNumber}.json`);
@@ -42,7 +71,7 @@ app.get('/api/day/:dayNumber', (req, res) => {
     }
 });
 
-// 사용 가능한 Day 목록 API (인증 제거)
+// 사용 가능한 Day 목록 API
 app.get('/api/days', (req, res) => {
     const jsonDir = path.join(__dirname, 'json');
     
