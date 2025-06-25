@@ -1,0 +1,242 @@
+[
+  {
+    "korean":"소득",
+    "russian":"доход",
+    "english":"Income",
+    "example":"국민연금은 은퇴 이후의 소득을 보장하는 제도이다."
+  },
+  {
+    "korean":"인간다운",
+    "russian":"Человеческий",
+    "english":"Humane",
+    "example":"국가는 국민의 인간다운 삶을 보장하기 위해 사회복지 제도를 운영한다."
+  },
+  {
+    "korean":"보장",
+    "russian":"гарантия",
+    "english":"Guarantee",
+    "example":"국민기초생활보장제도는 저소득층의 기본적인 생활을 보장한다."
+  },
+  {
+    "korean":"향상",
+    "russian":"улучшение",
+    "english":"Improvement",
+    "example":"사회복지 제도는 국민의 생활수준 향상을 목표로 한다."
+  },
+  {
+    "korean":"질병",
+    "russian":"болезнь",
+    "english":"Disease",
+    "example":"사회보험은 질병이나 실업 같은 위험에 대비하도록 설계되어 있다."
+  },
+  {
+    "korean":"사망",
+    "russian":"смерть",
+    "english":"Death",
+    "example":"가입자가 사고나 질병으로 사망할 경우 유족에게 연금을 지급한다."
+  },
+  {
+    "korean":"노령",
+    "russian":"старость",
+    "english":"Old age",
+    "example":"국민연금은 노령에 대비해 연금을 지급한다."
+  },
+  {
+    "korean":"실업",
+    "russian":"безработица",
+    "english":"Unemployment",
+    "example":"고용보험은 실업 상태의 근로자에게 급여를 제공한다."
+  },
+  {
+    "korean":"강제성",
+    "russian":"принудительность",
+    "english":"Compulsoriness",
+    "example":"사회보험은 법에 따라 강제성을 띠고 운영된다."
+  },
+  {
+    "korean":"가입",
+    "russian":"Регистрация",
+    "english":"Registration",
+    "example":"사회보험은 원칙적으로 의무 가입 제도다."
+  },
+  {
+    "korean":"원칙",
+    "russian":"Принцип",
+    "english":"Principle",
+    "example":"의무 가입이 사회보험의 기본 원칙이다."
+  },
+  {
+    "korean":"일부",
+    "russian":"Часть",
+    "english":"Part",
+    "example":"건강보험은 의료비의 일부를 지원한다."
+  },
+  {
+    "korean":"체계",
+    "russian":"система",
+    "english":"System",
+    "example":"대한민국의 건강보험 체계는 우수하다고 평가된다."
+  },
+  {
+    "korean":"본인 부담금",
+    "russian":"собственные затраты",
+    "english":"Personal expense",
+    "example":"건강보험은 본인 부담금 비중이 낮은 것으로 유명하다."
+  },
+  {
+    "korean":"우수한",
+    "russian":"выдающийся",
+    "english":"Outstanding",
+    "example":"한국의 의료보장체계는 세계적으로 우수한 모델로 인정받고 있다."
+  },
+  {
+    "korean":"관여하다",
+    "russian":"Участвовать",
+    "english":"To participate",
+    "example":"국민연금은 정부가 직접 관여하여 운영하는 공적 연금이다."
+  },
+  {
+    "korean":"공적",
+    "russian":"Государственный",
+    "english":"Public\/state",
+    "example":"국민연금은 공적 연금 제도의 하나다."
+  },
+  {
+    "korean":"속하다",
+    "russian":"Входить в состав",
+    "english":"To belong to",
+    "example":"국민연금은 세계 3대 연금에 속한다."
+  },
+  {
+    "korean":"장애가",
+    "russian":"Инвалидность",
+    "english":"Disability",
+    "example":"가입자가 사고로 장애가 생기면 연금을 지급한다."
+  },
+  {
+    "korean":"유족",
+    "russian":"семья умершего",
+    "english":"Bereaved family",
+    "example":"사망 시 유족에게 연금이 지급된다."
+  },
+  {
+    "korean":"지급하다",
+    "russian":"Выплачивать",
+    "english":"To pay",
+    "example":"국가는 실업 급여를 지급하여 생활을 지원한다."
+  },
+  {
+    "korean":"급여",
+    "russian":"зарплата",
+    "english":"Salary",
+    "example":"실업 급여를 통해 실직자는 생계를 유지할 수 있다."
+  },
+  {
+    "korean":"실직자",
+    "russian":"безработный",
+    "english":"Unemployed person",
+    "example":"고용보험은 실직자에게 재취업 프로그램도 제공한다."
+  },
+  {
+    "korean":"재취업",
+    "russian":"повторное трудоустройство",
+    "english":"Reemployment",
+    "example":"실업 급여 외에도 재취업을 위한 직업 훈련이 지원된다."
+  },
+  {
+    "korean":"훈련",
+    "russian":"Обучение",
+    "english":"Training",
+    "example":"재취업을 위한 직업 훈련 과정이 제공된다."
+  },
+  {
+    "korean":"장해",
+    "russian":"повреждение",
+    "english":"Impairment",
+    "example":"산업재해보상보험은 장해 보상을 포함한다."
+  },
+  {
+    "korean":"재해",
+    "russian":"несчастный случай",
+    "english":"Disaster\/accident",
+    "example":"산업재해보상보험은 업무 중 발생한 재해를 보상한다."
+  },
+  {
+    "korean":"대비하다",
+    "russian":"подготовиться",
+    "english":"To prepare",
+    "example":"사회보험은 미래의 위험에 대비하도록 설계되었다."
+  },
+  {
+    "korean":"대응하다",
+    "russian":"Реагировать",
+    "english":"To respond",
+    "example":"공공부조는 위험이 발생했을 때 이를 해결하고 대응한다."
+  },
+  {
+    "korean":"자립",
+    "russian":"независимость",
+    "english":"Independence",
+    "example":"공공부조는 대상자의 자립을 지원한다."
+  },
+  {
+    "korean":"달리",
+    "russian":"в отличие от",
+    "english":"Differently\/unlike",
+    "example":"공공부조는 사회보험과 달리 저소득층을 주 대상으로 한다."
+  },
+  {
+    "korean":"누리다",
+    "russian":"Пользоваться",
+    "english":"To enjoy",
+    "example":"국민은 건강보험 혜택을 누릴 수 있다."
+  },
+  {
+    "korean":"저소득층",
+    "russian":"Малообеспеченные",
+    "english":"Low-income group",
+    "example":"국민기초생활보장제도는 저소득층을 지원한다."
+  },
+  {
+    "korean":"의식주",
+    "russian":"базовые потребности",
+    "english":"Basic needs",
+    "example":"인간다운 생활에는 최소한의 의식주가 포함된다."
+  },
+  {
+    "korean":"대상",
+    "russian":"цель",
+    "english":"Target",
+    "example":"의료급여제도는 특정 지원 대상에게 의료비를 지원한다."
+  },
+  {
+    "korean":"관련하다",
+    "russian":"быть связанным с",
+    "english":"To be related to",
+    "example":"공공부조는 의료급여와 관련된 제도를 포함한다."
+  },
+  {
+    "korean":"국민기초생활보장제도",
+    "russian":"система базового социального обеспечения граждан",
+    "english":"National Basic Livelihood Security System",
+    "example":"국민기초생활보장제도는 생계, 교육, 의료, 주거를 지원한다."
+  },
+  {
+    "korean":"생계",
+    "russian":"Средства к существованию",
+    "english":"Means of living",
+    "example":"지원 대상자는 최저생계비 이하의 소득으로 생계를 유지하기 어렵다."
+  },
+  {
+    "korean":"다가오다",
+    "russian":"Наступать",
+    "english":"To approach",
+    "example":"노후가 다가오면 국민연금의 중요성이 커진다."
+  },
+  {
+    "korean":"대상자",
+    "russian":"кандидат",
+    "english":"Candidate",
+    "example":"최저생계비 이하인 사람은 지원 대상자가 된다."
+  }
+]

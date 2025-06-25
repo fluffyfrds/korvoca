@@ -1,0 +1,302 @@
+[
+  {
+    "korean":"위법",
+    "russian":"незаконный",
+    "english":"Illegal",
+    "example":"그 행동은 명백히 위법으로 처벌 대상이다."
+  },
+  {
+    "korean":"경범죄",
+    "russian":"правонарушение",
+    "english":"Misdemeanor",
+    "example":"무임승차는 대표적인 경범죄에 해당한다."
+  },
+  {
+    "korean":"무임승차",
+    "russian":"безбилетный проезд",
+    "english":"Fare evasion",
+    "example":"무임승차가 적발되면 벌금을 내야 한다."
+  },
+  {
+    "korean":"무전취식",
+    "russian":"питание без оплаты",
+    "english":"Dining without payment",
+    "example":"무전취식은 식당에서 음식을 먹고 돈을 내지 않는 행위다."
+  },
+  {
+    "korean":"새치기",
+    "russian":"без очереди",
+    "english":"Cutting in line",
+    "example":"새치기는 다른 사람에게 피해를 주는 경범죄다."
+  },
+  {
+    "korean":"오물투기",
+    "russian":"незаконное выбрасывание мусора",
+    "english":"Illegal dumping",
+    "example":"오물투기는 환경을 해치는 위법 행위다."
+  },
+  {
+    "korean":"금연장소 내의 흡연",
+    "russian":"курение там, где нельзя",
+    "english":"Smoking in non‑smoking areas",
+    "example":"금연장소 내의 흡연은 과태료가 부과된다."
+  },
+  {
+    "korean":"별도",
+    "russian":"отдельно",
+    "english":"Separately",
+    "example":"경범죄와 별도 중범죄 구분은 법률에 없다."
+  },
+  {
+    "korean":"중범죄",
+    "russian":"серьёзное преступление",
+    "english":"Felony",
+    "example":"살인과 강도는 중범죄로 중형을 받는다."
+  },
+  {
+    "korean":"강도",
+    "russian":"грабеж",
+    "english":"Robbery",
+    "example":"강도는 피해자에게 물질적 피해를 준다."
+  },
+  {
+    "korean":"판단하다",
+    "russian":"принимать решение",
+    "english":"To judge\/decide",
+    "example":"검찰은 기소 여부를 판단한다."
+  },
+  {
+    "korean":"수사",
+    "russian":"расследование",
+    "english":"Investigation",
+    "example":"경찰은 사건의 진상을 밝히기 위해 수사에 착수했다."
+  },
+  {
+    "korean":"피의자",
+    "russian":"подозреваемый",
+    "english":"Suspect",
+    "example":"피의자는 조사를 받을 때 변호인을 선임할 수 있다."
+  },
+  {
+    "korean":"조사하다",
+    "russian":"проводить допрос",
+    "english":"To investigate",
+    "example":"경찰은 목격자를 조사하여 증거를 모았다."
+  },
+  {
+    "korean":"기소",
+    "russian":"обвинение",
+    "english":"Prosecution",
+    "example":"검사는 증거를 바탕으로 피의자를 기소했다."
+  },
+  {
+    "korean":"피고인",
+    "russian":"обвиняемый",
+    "english":"Defendant",
+    "example":"피고인은 법정에서 무죄를 주장했다."
+  },
+  {
+    "korean":"주장하다",
+    "russian":"утверждать",
+    "english":"To assert",
+    "example":"변호사는 피고인의 무죄를 주장했다."
+  },
+  {
+    "korean":"양형",
+    "russian":"назначение наказания",
+    "english":"Sentencing",
+    "example":"판사는 범행 동기를 고려해 양형을 결정했다."
+  },
+  {
+    "korean":"판결",
+    "russian":"решение суда",
+    "english":"Court ruling",
+    "example":"최종 판결에서 징역 5년이 선고되었다."
+  },
+  {
+    "korean":"배심원",
+    "russian":"присяжный",
+    "english":"Juror",
+    "example":"국민참여재판에서는 배심원이 의견을 제시한다."
+  },
+  {
+    "korean":"강간",
+    "russian":"изнасилование",
+    "english":"Rape",
+    "example":"강간은 신체적·정신적 피해가 큰 중범죄다."
+  },
+  {
+    "korean":"신체적",
+    "russian":"физический",
+    "english":"Physical",
+    "example":"피해자는 심각한 신체적 상해를 입었다."
+  },
+  {
+    "korean":"정신적",
+    "russian":"психологический",
+    "english":"Psychological",
+    "example":"범죄는 피해자에게 정신적 충격을 남겼다."
+  },
+  {
+    "korean":"물질적",
+    "russian":"материальный",
+    "english":"Material",
+    "example":"피해자는 물질적 손해도 입었다."
+  },
+  {
+    "korean":"관세법",
+    "russian":"таможенный кодекс",
+    "english":"Customs code",
+    "example":"관세법 위반은 가중 처벌될 수 있다."
+  },
+  {
+    "korean":"부과하다",
+    "russian":"наложить",
+    "english":"To impose",
+    "example":"법원은 벌금을 부과했다."
+  },
+  {
+    "korean":"처분",
+    "russian":"мера",
+    "english":"Measure",
+    "example":"몰수 처분이 내려졌다."
+  },
+  {
+    "korean":"생명형",
+    "russian":"пожизненное заключение",
+    "english":"Life imprisonment",
+    "example":"생명형은 사형을 포함한다."
+  },
+  {
+    "korean":"자유형",
+    "russian":"лишение свободы",
+    "english":"Imprisonment",
+    "example":"자유형은 일정 기간 교도소에 수감된다."
+  },
+  {
+    "korean":"자격형",
+    "russian":"лишение прав",
+    "english":"Disqualification",
+    "example":"공무원 자격형이 함께 선고되었다."
+  },
+  {
+    "korean":"박탈하다",
+    "russian":"лишать",
+    "english":"To deprive",
+    "example":"판결은 피고인의 자격을 박탈했다."
+  },
+  {
+    "korean":"사형",
+    "russian":"смертная казнь",
+    "english":"Death penalty",
+    "example":"사형은 생명을 박탈하는 최고형이다."
+  },
+  {
+    "korean":"징역형",
+    "russian":"условное заключение",
+    "english":"Conditional sentence",
+    "example":"징역형이 선고되었으나 집행유예가 붙었다."
+  },
+  {
+    "korean":"노역",
+    "russian":"принудительные работы",
+    "english":"Forced labor",
+    "example":"징역형에는 노역이 포함될 수 있다."
+  },
+  {
+    "korean":"교도소",
+    "russian":"тюрьма",
+    "english":"Prison",
+    "example":"피고인은 교도소에서 복역 중이다."
+  },
+  {
+    "korean":"정지하다",
+    "russian":"приостанавливать",
+    "english":"To suspend",
+    "example":"자격 정지 2년 처분이 내려졌다."
+  },
+  {
+    "korean":"상실하다",
+    "russian":"утрачивать",
+    "english":"To lose",
+    "example":"형 확정으로 공무원 자격을 상실했다."
+  },
+  {
+    "korean":"제시하다",
+    "russian":"пересмотреть\/представить",
+    "english":"To present\/review",
+    "example":"변호인은 새로운 증거를 제시했다."
+  },
+  {
+    "korean":"여겨지다",
+    "russian":"рассматривать",
+    "english":"To be considered",
+    "example":"초범인 점이 양형에서 참작 요소로 여겨졌다."
+  },
+  {
+    "korean":"구속",
+    "russian":"заключение под стражу",
+    "english":"Detention",
+    "example":"피의자는 구속 상태로 재판을 받았다."
+  },
+  {
+    "korean":"압수",
+    "russian":"конфискация",
+    "english":"Confiscation",
+    "example":"경찰은 불법 무기를 압수했다."
+  },
+  {
+    "korean":"수색",
+    "russian":"обыск",
+    "english":"Search",
+    "example":"수사팀은 영장을 받아 피의자 집을 수색했다."
+  },
+  {
+    "korean":"영장",
+    "russian":"суд. ордер",
+    "english":"Warrant",
+    "example":"체포 영장 없이 체포할 수 없다."
+  },
+  {
+    "korean":"체포",
+    "russian":"арест",
+    "english":"Arrest",
+    "example":"경찰은 현행범을 즉시 체포했다."
+  },
+  {
+    "korean":"심사",
+    "russian":"проверка",
+    "english":"Examination",
+    "example":"구속적부심사에서 석방이 결정되었다."
+  },
+  {
+    "korean":"고문",
+    "russian":"пытка",
+    "english":"Torture",
+    "example":"고문은 어떠한 경우에도 허용되지 않는다."
+  },
+  {
+    "korean":"허용하다",
+    "russian":"разрешать",
+    "english":"To permit",
+    "example":"법은 불법 체포를 허용하지 않는다."
+  },
+  {
+    "korean":"협박",
+    "russian":"угроза",
+    "english":"Threat",
+    "example":"협박으로 얻은 자백은 증거가 아니다."
+  },
+  {
+    "korean":"자백",
+    "russian":"признание",
+    "english":"Confession",
+    "example":"피고인은 자백을 번복했다."
+  },
+  {
+    "korean":"증거",
+    "russian":"доказательство",
+    "english":"Evidence",
+    "example":"판사는 증거 부족으로 무죄를 선고했다."
+  }
+]

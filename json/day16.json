@@ -1,0 +1,224 @@
+[
+  {
+    "korean":"재화",
+    "russian":"товар",
+    "english":"Goods",
+    "example":"기업은 다양한 재화를 생산해 국내외 시장에 공급한다."
+  },
+  {
+    "korean":"분배",
+    "russian":"распределение",
+    "english":"Distribution",
+    "example":"재화와 서비스의 분배는 가계·기업·정부 간 상호작용으로 이루어진다."
+  },
+  {
+    "korean":"주",
+    "russian":"субъект",
+    "english":"Subject",
+    "example":"국민경제의 주 체는 가계, 기업, 정부로 구분된다."
+  },
+  {
+    "korean":"가계",
+    "russian":"домохозяйство",
+    "english":"Household",
+    "example":"가계는 주로 소비를 담당하며 기업에 노동과 자본을 제공한다."
+  },
+  {
+    "korean":"담당하다",
+    "russian":"отвечать за",
+    "english":"To be responsible for",
+    "example":"기업은 생산을 담당하고 노동자에게 임금을 지급한다."
+  },
+  {
+    "korean":"자본",
+    "russian":"капитал",
+    "english":"Capital",
+    "example":"가계는 기업에 자본을 제공하고 이자를 받는다."
+  },
+  {
+    "korean":"대가",
+    "russian":"вознаграждение",
+    "english":"Compensation",
+    "example":"노동의 대가로 임금을 받는다."
+  },
+  {
+    "korean":"지대",
+    "russian":"земельная рента",
+    "english":"Land rent",
+    "example":"가계는 토지를 제공하고 지대를 얻는다."
+  },
+  {
+    "korean":"이자",
+    "russian":"проценты",
+    "english":"Interest",
+    "example":"은행 예금자는 이자를 통해 자본 대가를 받는다."
+  },
+  {
+    "korean":"공공재",
+    "russian":"общественное благо",
+    "english":"Public goods",
+    "example":"정부는 도로 같은 공공재를 제공한다."
+  },
+  {
+    "korean":"사회간접자본",
+    "russian":"косвенный капитал",
+    "english":"Social overhead capital",
+    "example":"정부는 사회간접자본 투자를 확대해 경제를 지원한다."
+  },
+  {
+    "korean":"추구하다",
+    "russian":"стремиться",
+    "english":"To pursue",
+    "example":"정부는 국민 전체의 이익을 추구한다."
+  },
+  {
+    "korean":"상호작용",
+    "russian":"взаимодействие",
+    "english":"Interaction",
+    "example":"가계, 기업, 정부의 상호작용으로 경제가 유지된다."
+  },
+  {
+    "korean":"가치",
+    "russian":"ценность",
+    "english":"Value",
+    "example":"물가 상승은 돈의 가치를 떨어뜨린다."
+  },
+  {
+    "korean":"마찬가지",
+    "russian":"также",
+    "english":"Likewise",
+    "example":"소득 감소는 물가 상승과 마찬가지로 생활 수준을 낮춘다."
+  },
+  {
+    "korean":"외환위기",
+    "russian":"валютный кризис",
+    "english":"Currency crisis",
+    "example":"1998년 외환위기 때 물가가 급등했다."
+  },
+  {
+    "korean":"금융위기",
+    "russian":"финансовый кризис",
+    "english":"Financial crisis",
+    "example":"2008년 금융위기에서도 인플레이션이 발생했다."
+  },
+  {
+    "korean":"상승률",
+    "russian":"темп роста",
+    "english":"Growth rate",
+    "example":"물가 상승률은 1%대에서 유지되고 있다."
+  },
+  {
+    "korean":"체감 물가",
+    "russian":"предполагаемый уровень цен",
+    "english":"Perceived price level",
+    "example":"체감 물가는 공식 물가보다 높게 느껴질 수 있다."
+  },
+  {
+    "korean":"무렵",
+    "russian":"примерно",
+    "english":"Around (approximately)",
+    "example":"외환위기 무렵 실업률이 7%를 넘었다."
+  },
+  {
+    "korean":"안",
+    "russian":"в пределах",
+    "english":"Within",
+    "example":"실업률은 4% 안팎에서 형성되고 있다."
+  },
+  {
+    "korean":"형성하다",
+    "russian":"формировать",
+    "english":"To form",
+    "example":"환율은 시장에서 수요와 공급으로 형성된다."
+  },
+  {
+    "korean":"지속적",
+    "russian":"постоянный",
+    "english":"Continuous",
+    "example":"지속적인 물가 관리가 필요하다."
+  },
+  {
+    "korean":"경제성장정책",
+    "russian":"экономическая политика роста",
+    "english":"Economic growth policy",
+    "example":"한국은 수출주도형 경제성장정책을 채택했다."
+  },
+  {
+    "korean":"채택하다",
+    "russian":"принять",
+    "english":"To adopt",
+    "example":"1960년대 이후 한국은 수출 중심 전략을 채택했다."
+  },
+  {
+    "korean":"연간",
+    "russian":"годовой",
+    "english":"Annual",
+    "example":"한국은 연간 수출 6000억 달러를 돌파했다."
+  },
+  {
+    "korean":"돌파하다",
+    "russian":"преодолеть",
+    "english":"To overcome",
+    "example":"한국은 무역액 1조 달러를 돌파했다."
+  },
+  {
+    "korean":"거두다",
+    "russian":"собирать",
+    "english":"To collect",
+    "example":"수출 확대 정책으로 큰 성과를 거두었다."
+  },
+  {
+    "korean":"화폐",
+    "russian":"валюта",
+    "english":"Currency",
+    "example":"국제거래에서는 각국의 화폐를 교환해야 한다."
+  },
+  {
+    "korean":"공통적",
+    "russian":"общий",
+    "english":"Common",
+    "example":"달러는 국제사회에서 공통적으로 사용된다."
+  },
+  {
+    "korean":"변동",
+    "russian":"колебание",
+    "english":"Fluctuation",
+    "example":"환율 변동은 수출입 가격에 영향을 준다."
+  },
+  {
+    "korean":"유리하다",
+    "russian":"выгодно",
+    "english":"Advantageous",
+    "example":"환율 상승은 수출 기업에 유리하다."
+  },
+  {
+    "korean":"경쟁력",
+    "russian":"конкурентоспособность",
+    "english":"Competitiveness",
+    "example":"원화 약세는 가격 경쟁력을 높인다."
+  },
+  {
+    "korean":"성능",
+    "russian":"производительность",
+    "english":"Performance",
+    "example":"같은 성능의 제품을 더 싸게 팔 수 있다."
+  },
+  {
+    "korean":"승급하다",
+    "russian":"переводить",
+    "english":"To promote",
+    "example":"수출 증가는 국가 신용등급 승급에 기여했다."
+  },
+  {
+    "korean":"규모",
+    "russian":"масштаб",
+    "english":"Scale",
+    "example":"거래 규모가 꾸준히 확대되고 있다."
+  },
+  {
+    "korean":"바람직하다",
+    "russian":"желательно",
+    "english":"Desirable",
+    "example":"변하는 환율에 관심을 갖는 것이 바람직하다."
+  }
+]

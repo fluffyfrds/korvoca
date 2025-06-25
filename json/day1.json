@@ -1,0 +1,332 @@
+[
+  {
+    "korean":"정해 놓은",
+    "russian":"установленный",
+    "english":"established",
+    "example":"헌법은 국가를 어떻게 조직하고 통치할 것인지, 국민에게 어떤 권리와 의무가 있는지 등을 정해 놓은 법이다."
+  },
+  {
+    "korean":"민법",
+    "russian":"Гр. право",
+    "english":"Civil Law",
+    "example":"민법·형법·상법·행정법 등 모든 법률은 국가의 근본 법인 헌법을 바탕으로 만들어지고 해석된다."
+  },
+  {
+    "korean":"형법",
+    "russian":"Уголовное право",
+    "english":"Criminal Law",
+    "example":"민법·형법·상법·행정법 등 모든 법률은 국가의 근본 법인 헌법을 바탕으로 만들어지고 해석된다."
+  },
+  {
+    "korean":"상법",
+    "russian":"Торговое право",
+    "english":"Commercial Law",
+    "example":"민법·형법·상법·행정법 등 모든 법률은 국가의 근본 법인 헌법을 바탕으로 만들어지고 해석된다."
+  },
+  {
+    "korean":"행정법",
+    "russian":"Административное право",
+    "english":"Administrative Law",
+    "example":"민법·형법·상법·행정법 등 모든 법률은 국가의 근본 법인 헌법을 바탕으로 만들어지고 해석된다."
+  },
+  {
+    "korean":"근본 법인",
+    "russian":"Основной закон",
+    "english":"Fundamental Law",
+    "example":"민법·형법·상법·행정법 등 모든 법률은 국가의 근본 법인 헌법을 바탕으로 만들어지고 해석된다."
+  },
+  {
+    "korean":"해석되다",
+    "russian":"Толковаться",
+    "english":"To be interpreted",
+    "example":"민법·형법·상법·행정법 등 모든 법률은 국가의 근본 법인 헌법을 바탕으로 만들어지고 해석된다."
+  },
+  {
+    "korean":"최고 법의 지위",
+    "russian":"Высший юр. статус",
+    "english":"Highest legal status",
+    "example":"헌법은 최고 법의 지위를 가지기 때문에 다른 법률과 충돌할 때는 헌법이 우선 적용된다."
+  },
+  {
+    "korean":"우선",
+    "russian":"приоритет",
+    "english":"Priority",
+    "example":"헌법은 최고 법의 지위를 가지기 때문에 다른 법률과 충돌할 때는 헌법이 우선 적용된다."
+  },
+  {
+    "korean":"어긋나는",
+    "russian":"Противоречащий",
+    "english":"Contradictory",
+    "example":"그리고 헌법에 어긋나는 정책이나 법률은 폐지되거나 고쳐진다."
+  },
+  {
+    "korean":"폐지되다",
+    "russian":"Быть отменённым",
+    "english":"To be abolished",
+    "example":"그리고 헌법에 어긋나는 정책이나 법률은 폐지되거나 고쳐진다."
+  },
+  {
+    "korean":"고쳐지다",
+    "russian":"Исправляться",
+    "english":"To be corrected",
+    "example":"그리고 헌법에 어긋나는 정책이나 법률은 폐지되거나 고쳐진다."
+  },
+  {
+    "korean":"제정되다",
+    "russian":"Принять",
+    "english":"To be enacted",
+    "example":"대한민국 헌법은 1948년 7월 17일에 제정되었다."
+  },
+  {
+    "korean":"정체성",
+    "russian":"Идентичность",
+    "english":"Identity",
+    "example":"헌법에는 대한민국의 정체성과 특징이 잘 담겨 있다."
+  },
+  {
+    "korean":"특징",
+    "russian":"Особенность",
+    "english":"Characteristic",
+    "example":"헌법에는 대한민국의 정체성과 특징이 잘 담겨 있다."
+  },
+  {
+    "korean":"담기다",
+    "russian":"Содержать",
+    "english":"To contain",
+    "example":"헌법에는 대한민국의 정체성과 특징이 잘 담겨 있다."
+  },
+  {
+    "korean":"진문",
+    "russian":"Вступление",
+    "english":"Introduction",
+    "example":"헌법 전문에 나타나 있는 대한민국은 3·1 운동으로 세워진 대한민국 임시정부와 4·19 민주이념을 이어받은 나라이다."
+  },
+  {
+    "korean":"민주이념",
+    "russian":"Демокр. идеология",
+    "english":"Democratic Ideology",
+    "example":"헌법 전문에 나타나 있는 대한민국은 3·1 운동으로 세워진 대한민국 임시정부와 4·19 민주이념을 이어받은 나라이다."
+  },
+  {
+    "korean":"이양되다",
+    "russian":"Принять",
+    "english":"To be transferred",
+    "example":"정권은 민주적 절차에 따라 새로운 정부로 이양되었다."
+  },
+  {
+    "korean":"민주공화국",
+    "russian":"Демокр. республика",
+    "english":"Democratic Republic",
+    "example":"헌법 제1조 1항과 2항에서는 각각 대한민국이 민주공화국이며, 대한민국의 주권이 국민에게 있다는 점을 강조하고 있다."
+  },
+  {
+    "korean":"주권",
+    "russian":"Суверенитет",
+    "english":"Sovereignty",
+    "example":"헌법 제1조 1항과 2항에서는 각각 대한민국이 민주공화국이며, 대한민국의 주권이 국민에게 있다는 점을 강조하고 있다."
+  },
+  {
+    "korean":"강조하다",
+    "russian":"Подчеркиваться",
+    "english":"To emphasize",
+    "example":"헌법 제1조 1항과 2항에서는 각각 대한민국이 민주공화국이며, 대한민국의 주권이 국민에게 있다는 점을 강조하고 있다."
+  },
+  {
+    "korean":"국민주권",
+    "russian":"Народный суверенитет",
+    "english":"National Sovereignty",
+    "example":"대한민국이 국민주권의 원리를 따르고 있음을 알 수 있다."
+  },
+  {
+    "korean":"원칙",
+    "russian":"Принцип",
+    "english":"Principle",
+    "example":"국민주권 원칙은 헌법 전반에 걸쳐 드러난다."
+  },
+  {
+    "korean":"제시되다",
+    "russian":"Излагать",
+    "english":"To be presented",
+    "example":"그리고 헌법에는 대한민국 국민의 권리와 의무도 제시되어 있다."
+  },
+  {
+    "korean":"공포되다",
+    "russian":"Быть принятым",
+    "english":"To be promulgated",
+    "example":"대한민국 헌법은 1948년 7월 17일에 공포되고 1987년까지 9번의 개정이 이루어졌다."
+  },
+  {
+    "korean":"개정",
+    "russian":"Поправка",
+    "english":"Amendment",
+    "example":"대한민국 헌법은 1948년 7월 17일에 공포되고 1987년까지 9번의 개정이 이루어졌다."
+  },
+  {
+    "korean":"의원 내각제",
+    "russian":"Парлам. система",
+    "english":"Parliamentary system",
+    "example":"3차 개헌에서는 대통령제에서 의원 내각제로 정부 형태를 변경했으며 동시에 양원제를 시행하였다."
+  },
+  {
+    "korean":"양원제",
+    "russian":"Двухпалат. система",
+    "english":"Bicameral system",
+    "example":"3차 개헌에서는 대통령제에서 의원 내각제로 정부 형태를 변경했으며 동시에 양원제를 시행하였다."
+  },
+  {
+    "korean":"국민투표",
+    "russian":"Референдум",
+    "english":"Referendum",
+    "example":"5차 개헌에서는 다시 대통령제로 바뀌었는데 처음으로 국민투표에 의해 확정되었다."
+  },
+  {
+    "korean":"간접선거",
+    "russian":"Косвенные выборы",
+    "english":"Indirect election",
+    "example":"7차 개헌에서는 대통령의 권한을 강화하고 대통령 선출방식을 간접선거로 변경하였다."
+  },
+  {
+    "korean":"여당",
+    "russian":"Правящая партия",
+    "english":"Ruling party",
+    "example":"9차 개헌에서는 여당과 야당이 합의하여 대통령 직선제, 5년 단임제로 개헌했다."
+  },
+  {
+    "korean":"야당",
+    "russian":"Оппозиция",
+    "english":"Opposition",
+    "example":"9차 개헌에서는 여당과 야당이 합의하여 대통령 직선제, 5년 단임제로 개헌했다."
+  },
+  {
+    "korean":"헌법재판소",
+    "russian":"Консти. суд",
+    "english":"Constitutional Court",
+    "example":"1987년에 개정된 대한민국 헌법에서는 헌법재판소라는 기관을 만들어 헌법을 수호하고 국민의 기본권을 보호하도록 하였다."
+  },
+  {
+    "korean":"수호",
+    "russian":"Защита",
+    "english":"Protection",
+    "example":"1987년에 개정된 대한민국 헌법에서는 헌법재판소라는 기관을 만들어 헌법을 수호하고 국민의 기본권을 보호하도록 하였다."
+  },
+  {
+    "korean":"재판관",
+    "russian":"Судья",
+    "english":"Judge",
+    "example":"헌법재판소는 9명의 재판관으로 구성되어 있다."
+  },
+  {
+    "korean":"입법부",
+    "russian":"Законодат. власть",
+    "english":"Legislative power",
+    "example":"헌법재판소는 입법부·행정부·사법부 어디에도 속하지 않는 독립된 기관이다."
+  },
+  {
+    "korean":"행정부",
+    "russian":"Исполнит. власть",
+    "english":"Executive power",
+    "example":"헌법재판소는 입법부·행정부·사법부 어디에도 속하지 않는 독립된 기관이다."
+  },
+  {
+    "korean":"사법부",
+    "russian":"Судеб. власть",
+    "english":"Judicial power",
+    "example":"헌법재판소는 입법부·행정부·사법부 어디에도 속하지 않는 독립된 기관이다."
+  },
+  {
+    "korean":"소속",
+    "russian":"Принадлежать",
+    "english":"Belonging",
+    "example":"헌법재판소는 입법부·행정부·사법부 어디에도 속하지 않는 독립된 기관이다."
+  },
+  {
+    "korean":"독립된",
+    "russian":"Независимый",
+    "english":"Independent",
+    "example":"헌법재판소는 입법부·행정부·사법부 어디에도 속하지 않는 독립된 기관이다."
+  },
+  {
+    "korean":"판단하다",
+    "russian":"Решать\/оценивать",
+    "english":"To judge\/evaluate",
+    "example":"첫째, 국회에서 만든 법률이 헌법에 맞는지 판단한다."
+  },
+  {
+    "korean":"위헌",
+    "russian":"несоответ. Конституции",
+    "english":"Unconstitutional",
+    "example":"헌법재판소가 위헌이라고 판결한 법률은 무효가 된다."
+  },
+  {
+    "korean":"판결하다",
+    "russian":"Выносить приговор",
+    "english":"To make a ruling",
+    "example":"헌법재판소가 위헌이라고 판결한 법률은 무효가 된다."
+  },
+  {
+    "korean":"무효",
+    "russian":"Отмена",
+    "english":"Invalidity\/Annulment",
+    "example":"헌법재판소가 위헌이라고 판결한 법률은 무효가 된다."
+  },
+  {
+    "korean":"장관",
+    "russian":"Министр",
+    "english":"Minister",
+    "example":"국회가 대통령이나 장관, 법관 등 일부 고위 공무원의 파면을 요구할 때 심판하는 역할을 한다."
+  },
+  {
+    "korean":"파면",
+    "russian":"Отставка",
+    "english":"Dismissal",
+    "example":"국회가 대통령이나 장관, 법관 등 일부 고위 공무원의 파면을 요구할 때 심판하는 역할을 한다."
+  },
+  {
+    "korean":"위반하다",
+    "russian":"Нарушать",
+    "english":"To violate",
+    "example":"고위 공무원이 헌법이나 법률을 위반했다고 헌법재판소가 판결을 내리면 그 공무원은 즉시 파면된다."
+  },
+  {
+    "korean":"즉시",
+    "russian":"Сразу",
+    "english":"Immediately",
+    "example":"고위 공무원이 헌법이나 법률을 위반했다고 헌법재판소가 판결을 내리면 그 공무원은 즉시 파면된다."
+  },
+  {
+    "korean":"보장",
+    "russian":"Гарантированный",
+    "english":"Guaranteed",
+    "example":"9차 개헌에서는 국민의 기본권 보장이 보다 강화되었다."
+  },
+  {
+    "korean":"침해당하다",
+    "russian":"Быть нарушенным",
+    "english":"To be infringed",
+    "example":"국가 권력에 의해 대한민국 국민이 헌법에 보장된 기본권을 침해당했는지 여부를 결정한다."
+  },
+  {
+    "korean":"질서",
+    "russian":"Порядок",
+    "english":"Order",
+    "example":"2000년대 중반까지는 남성을 중심으로 가족의 질서를 규정한 법 호주제가 있었다."
+  },
+  {
+    "korean":"규정하다",
+    "russian":"Регламентировать",
+    "english":"To regulate",
+    "example":"2000년대 중반까지는 남성을 중심으로 가족의 질서를 규정한 법 호주제가 있었다."
+  },
+  {
+    "korean":"인간의 존엄성",
+    "russian":"Достоинство человека",
+    "english":"Human dignity",
+    "example":"이 법은 인간의 존엄성 및 양성평등에 맞지 않고 국민의 기본권을 침해했다는 헌법재판소의 판결에 따라 변경되었다."
+  },
+  {
+    "korean":"양성평등",
+    "russian":"Гендер. равенство",
+    "english":"Gender equality",
+    "example":"이 법은 인간의 존엄성 및 양성평등에 맞지 않고 국민의 기본권을 침해했다는 헌법재판소의 판결에 따라 변경되었다."
+  }
+]

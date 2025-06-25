@@ -1,0 +1,266 @@
+[
+  {
+    "korean":"의무",
+    "russian":"Обязанность",
+    "english":"Duty",
+    "example":"의무란 마땅히 해야 하는 일을 가리킨다."
+  },
+  {
+    "korean":"누리다",
+    "russian":"Пользоваться\/иметь",
+    "english":"To enjoy\/use",
+    "example":"국민은 다양한 권리를 누리며 동시에 의무를 지켜야 한다."
+  },
+  {
+    "korean":"규정하다",
+    "russian":"Определять\/Устанавливать",
+    "english":"To define\/establish",
+    "example":"교육기본법에 따라 초등학교와 중학교 과정이 의무 교육으로 규정되어 있다."
+  },
+  {
+    "korean":"마땅히",
+    "russian":"Должным образом\/как следует",
+    "english":"Properly\/as required",
+    "example":"의무란 마땅히 해야 하는 일을 가리킨다."
+  },
+  {
+    "korean":"정하다",
+    "russian":"Устанавливать\/Решать",
+    "english":"To set\/decide",
+    "example":"세금의 종류와 비율은 법률로 정해야 한다."
+  },
+  {
+    "korean":"강제성",
+    "russian":"Принудительный характер",
+    "english":"Compulsory nature",
+    "example":"헌법에서 정해 놓은 의무는 강제성을 띠고 있다."
+  },
+  {
+    "korean":"수행하다",
+    "russian":"Выполнять\/Осуществлять",
+    "english":"To perform\/implement",
+    "example":"헌법에서 정한 의무는 반드시 수행해야 한다."
+  },
+  {
+    "korean":"복지",
+    "russian":"Соц. обеспечение",
+    "english":"Welfare",
+    "example":"세금은 복지, 교육, 건설, 행정 등에 사용된다."
+  },
+  {
+    "korean":"건설",
+    "russian":"Строительство",
+    "english":"Construction",
+    "example":"세금은 복지, 교육, 건설, 행정 등에 사용된다."
+  },
+  {
+    "korean":"행정",
+    "russian":"Администр. управление",
+    "english":"Administration",
+    "example":"세금은 복지, 교육, 건설, 행정 등에 사용된다."
+  },
+  {
+    "korean":"안정적",
+    "russian":"Стабильный",
+    "english":"Stable",
+    "example":"세금은 국가가 안정적으로 유지되고 발전하는 데 필요한 자금을 마련한다."
+  },
+  {
+    "korean":"확보하다",
+    "russian":"Обеспечить\/Гарантировать",
+    "english":"To secure\/guarantee",
+    "example":"국민은 국가 재정을 확보하도록 세금을 납부해야 한다."
+  },
+  {
+    "korean":"성실하다",
+    "russian":"Добросовестный",
+    "english":"Sincere\/diligent",
+    "example":"국민은 세금을 성실하게 내야 한다."
+  },
+  {
+    "korean":"종류",
+    "russian":"Вид, категория",
+    "english":"Type",
+    "example":"세금의 종류와 비율은 법률로 정해 놓아야 한다."
+  },
+  {
+    "korean":"비율",
+    "russian":"Соотношение",
+    "english":"Ratio",
+    "example":"세금의 종류와 비율은 법률로 정해 놓아야 한다."
+  },
+  {
+    "korean":"독립",
+    "russian":"Независимость",
+    "english":"Independence",
+    "example":"국방의 의무는 국가의 독립을 유지하기 위한 것이다."
+  },
+  {
+    "korean":"유지하다",
+    "russian":"Сохранять",
+    "english":"To maintain",
+    "example":"국방의 의무는 국가의 독립을 유지하고 영토를 보전하기 위해 필요하다."
+  },
+  {
+    "korean":"영토",
+    "russian":"Территория",
+    "english":"Territory",
+    "example":"국방의 의무는 국가의 독립을 유지하고 영토를 보전하기 위해 필요하다."
+  },
+  {
+    "korean":"일정 기간",
+    "russian":"Определённое время",
+    "english":"Specific period",
+    "example":"만 18세 이상의 남성은 일정 기간 군 복무를 해야 한다."
+  },
+  {
+    "korean":"복무하다",
+    "russian":"Служить",
+    "english":"To serve",
+    "example":"만 18세 이상의 남성은 일정 기간 동안 군인으로 복무해야 한다."
+  },
+  {
+    "korean":"단순",
+    "russian":"Лишь, только",
+    "english":"Simple, merely",
+    "example":"국방의 의무는 단순히 군 복무에만 해당하는 것이 아니다."
+  },
+  {
+    "korean":"해당하다",
+    "russian":"Относиться\/Касаться",
+    "english":"To correspond\/relate",
+    "example":"국방의 의무는 단순히 군 복무에만 해당하는 것이 아니다."
+  },
+  {
+    "korean":"국가 안보",
+    "russian":"Нац. безопасность",
+    "english":"National security",
+    "example":"평상시에도 국가 안보와 관련된 활동을 해야 할 의무가 있다."
+  },
+  {
+    "korean":"관련하다",
+    "russian":"Быть связанным",
+    "english":"To be related",
+    "example":"국가 안보와 관련된 다양한 활동을 수행해야 한다."
+  },
+  {
+    "korean":"전체",
+    "russian":"Все",
+    "english":"Entire, whole",
+    "example":"국민 전체가 안보 활동에 참여할 책임이 있다."
+  },
+  {
+    "korean":"현행",
+    "russian":"Активный\/действующий",
+    "english":"Current\/active",
+    "example":"현행 법률에 따라 병역 제도가 운영된다."
+  },
+  {
+    "korean":"입대하다",
+    "russian":"Идти в армию",
+    "english":"To enlist",
+    "example":"원한다면 징병검사를 받은 후 입대할 수 있다."
+  },
+  {
+    "korean":"징병검사",
+    "russian":"Призывной мед. осмотр",
+    "english":"Military draft medical examination",
+    "example":"원한다면 징병검사를 받은 후 입대할 수 있다."
+  },
+  {
+    "korean":"교양",
+    "russian":"Образованность",
+    "english":"Cultivation\/education",
+    "example":"교육을 통해 국민은 기본적인 교양과 능력을 갖춘다."
+  },
+  {
+    "korean":"과태료",
+    "russian":"Штраф",
+    "english":"Fine",
+    "example":"자녀를 학교에 보내지 않으면 최대 100만원의 과태료를 낼 수 있다."
+  },
+  {
+    "korean":"기여하다",
+    "russian":"Вносить вклад",
+    "english":"To contribute",
+    "example":"근로를 통해 국민은 국가 경제에 기여할 수 있다."
+  },
+  {
+    "korean":"여건",
+    "russian":"Условия",
+    "english":"Conditions",
+    "example":"일할 수 있는 능력이 있고 여건이 갖추어졌는데도 일을 하지 않는 것은 바람직하지 않다."
+  },
+  {
+    "korean":"합리적이다",
+    "russian":"Целесообразно",
+    "english":"Rational",
+    "example":"세금 제도는 국민의 여건에 맞게 합리적이어야 한다."
+  },
+  {
+    "korean":"범위",
+    "russian":"Пределы\/область",
+    "english":"Scope\/range",
+    "example":"국민은 자신의 능력 범위 내에서 근로해야 한다."
+  },
+  {
+    "korean":"법적",
+    "russian":"Законный\/справедливый",
+    "english":"Legal\/fair",
+    "example":"세금 부과에는 확실한 법적 근거가 필요하다."
+  },
+  {
+    "korean":"꾸리다",
+    "russian":"Устраивать\/организовывать",
+    "english":"To manage\/organize",
+    "example":"국민은 근로를 통해 자신의 생활을 꾸려 나가야 한다."
+  },
+  {
+    "korean":"기회",
+    "russian":"Возможность",
+    "english":"Opportunity",
+    "example":"근로는 국민에게 성장할 기회를 제공한다."
+  },
+  {
+    "korean":"적정하다",
+    "russian":"Соответствующий",
+    "english":"Appropriate",
+    "example":"근로의 권리는 적정한 임금을 받을 권리를 포함한다."
+  },
+  {
+    "korean":"쾌적하다",
+    "russian":"Удобный\/комфортный",
+    "english":"Pleasant\/comfortable",
+    "example":"모두가 건강하고 쾌적한 환경에서 살 권리가 있다."
+  },
+  {
+    "korean":"재산",
+    "russian":"Имущество",
+    "english":"Property",
+    "example":"국민은 자신의 재산을 자유롭게 사용할 권리가 있다."
+  },
+  {
+    "korean":"행사하다",
+    "russian":"Осуществлять",
+    "english":"To exercise\/implement",
+    "example":"재산권을 행사할 때는 공공의 이익을 고려해야 한다."
+  },
+  {
+    "korean":"공공의 이익",
+    "russian":"Для обществ. блага",
+    "english":"For public interest",
+    "example":"재산권 행사 시 공공의 이익에 적합해야 한다."
+  },
+  {
+    "korean":"적합하다",
+    "russian":"Подходящий",
+    "english":"Suitable",
+    "example":"재산권 행사 시 공공의 이익에 적합하도록 해야 한다."
+  },
+  {
+    "korean":"제한하다",
+    "russian":"Ограничивать",
+    "english":"To restrict\/limit",
+    "example":"국가는 공공복리를 위해 재산권을 제한할 수 있다."
+  }
+]

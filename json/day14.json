@@ -1,0 +1,188 @@
+[
+  {
+    "korean":"자금 공급자",
+    "russian":"поставщик средств",
+    "english":"Funds provider",
+    "example":"은행은 자금 공급자와 자금 수요자를 연결하는 역할을 한다."
+  },
+  {
+    "korean":"자금 수요자",
+    "russian":"потребитель средств",
+    "english":"Funds consumer",
+    "example":"돈이 필요한 자금 수요자는 은행에서 대출을 받는다."
+  },
+  {
+    "korean":"맡기다",
+    "russian":"вверять",
+    "english":"To entrust",
+    "example":"여유 자금을 가진 사람은 돈을 은행에 맡기고 이자를 받는다."
+  },
+  {
+    "korean":"가입하다",
+    "russian":"оформить",
+    "english":"To subscribe\/join",
+    "example":"모바일 뱅킹으로 예금 상품에 가입하면 더 높은 금리를 받을 수 있다."
+  },
+  {
+    "korean":"금리",
+    "russian":"проц ставка",
+    "english":"Interest rate",
+    "example":"대출 전에는 금리를 반드시 확인해야 한다."
+  },
+  {
+    "korean":"금액",
+    "russian":"сумма",
+    "english":"Amount",
+    "example":"이자 금액은 금리와 대출 금액에 따라 달라진다."
+  },
+  {
+    "korean":"담보",
+    "russian":"залог",
+    "english":"Collateral",
+    "example":"주택 같은 담보가 있으면 대출 금리를 낮출 수 있다."
+  },
+  {
+    "korean":"대비하다",
+    "russian":"подготовиться",
+    "english":"To prepare",
+    "example":"보험은 미래 위험에 대비하기 위해 가입한다."
+  },
+  {
+    "korean":"훗날",
+    "russian":"позднее",
+    "english":"Later",
+    "example":"훗날 위기가 생기면 보험금으로 도움을 받을 수 있다."
+  },
+  {
+    "korean":"금융상품",
+    "russian":"финансовый продукт",
+    "english":"Financial product",
+    "example":"보험은 대표적인 금융상품 중 하나이다."
+  },
+  {
+    "korean":"손해보험",
+    "russian":"страх-е от убытков",
+    "english":"Loss insurance",
+    "example":"자동차보험은 손해보험의 대표적인 예다."
+  },
+  {
+    "korean":"재산",
+    "russian":"имущество",
+    "english":"Property",
+    "example":"손해보험은 재산 손실에 대비해 가입한다."
+  },
+  {
+    "korean":"처리",
+    "russian":"обработка",
+    "english":"Processing",
+    "example":"사고 처리 비용을 보험사가 부담한다."
+  },
+  {
+    "korean":"일정한 연령",
+    "russian":"определённый возраст",
+    "english":"Certain age",
+    "example":"보험은 일정한 연령까지 생존 시 보험금을 지급한다."
+  },
+  {
+    "korean":"생존하다",
+    "russian":"выживать",
+    "english":"To survive",
+    "example":"가입자가 일정한 연령까지 생존하면 연금을 받는다."
+  },
+  {
+    "korean":"정해둔다",
+    "russian":"установить",
+    "english":"To set\/define",
+    "example":"보험은 미리 정해둔 금액을 지급한다."
+  },
+  {
+    "korean":"실손",
+    "russian":"фактические расходы",
+    "english":"Actual expenses",
+    "example":"실손보험은 병원비의 상당 부분을 보장한다."
+  },
+  {
+    "korean":"상당",
+    "russian":"значительный",
+    "english":"Significant",
+    "example":"암보험은 상당한 치료비를 지원한다."
+  },
+  {
+    "korean":"신중하다",
+    "russian":"осторожно",
+    "english":"To be cautious",
+    "example":"보험 가입은 중途 해지 시 손해가 크므로 신중해야 한다."
+  },
+  {
+    "korean":"해지하다",
+    "russian":"прекратить",
+    "english":"To terminate",
+    "example":"보험을 중간에 해지하면 환급금이 적다."
+  },
+  {
+    "korean":"수익",
+    "russian":"доход",
+    "english":"Income",
+    "example":"주식은 높은 수익을 기대할 수 있지만 위험도 높다."
+  },
+  {
+    "korean":"경영",
+    "russian":"управление",
+    "english":"Management",
+    "example":"회사의 경영 성과가 좋으면 주가가 오른다."
+  },
+  {
+    "korean":"발행하다",
+    "russian":"выпускать",
+    "english":"To issue",
+    "example":"기업은 자금 조달을 위해 회사채를 발행한다."
+  },
+  {
+    "korean":"증서",
+    "russian":"ценная бумага",
+    "english":"Certificate\/security",
+    "example":"채권은 일정 기간 후 원금과 이자를 돌려주는 증서이다."
+  },
+  {
+    "korean":"일정",
+    "russian":"определённый",
+    "english":"Schedule\/fixed",
+    "example":"채권은 일정 기간이 지나면 원금을 상환한다."
+  },
+  {
+    "korean":"원금",
+    "russian":"основная сумма",
+    "english":"Principal amount",
+    "example":"투자자는 만기 시 원금과 이자를 받는다."
+  },
+  {
+    "korean":"상가",
+    "russian":"торг. помещение",
+    "english":"Commercial property",
+    "example":"상가 투자로 임대료 수익을 얻을 수 있다."
+  },
+  {
+    "korean":"토지",
+    "russian":"земля",
+    "english":"Land",
+    "example":"토지 매입 후 가치 상승으로 차익을 얻기도 한다."
+  },
+  {
+    "korean":"차익",
+    "russian":"чистая прибыль",
+    "english":"Capital gain\/net profit",
+    "example":"부동산을 비싸게 팔아 차익을 남길 수 있다."
+  },
+  {
+    "korean":"관련",
+    "russian":"связанный",
+    "english":"Related",
+    "example":"부동산 투자는 큰 자금이 관련되어 있다."
+  },
+  {
+    "korean":"자산운용회사",
+    "russian":"управляющая компания",
+    "english":"Asset management company",
+    "example":"펀드는 자산운용회사가 투자해 수익을 배분한다."
+  }
+]

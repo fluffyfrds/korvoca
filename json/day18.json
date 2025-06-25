@@ -1,0 +1,164 @@
+[
+  {
+    "korean":"절차",
+    "russian":"процедура",
+    "english":"Procedure",
+    "example":"사망 신고는 법적 절차에 따라 진행된다."
+  },
+  {
+    "korean":"처리하다",
+    "russian":"обрабатывать",
+    "english":"To process",
+    "example":"의사는 사망을 확인하고 사망 진단서를 처리한다."
+  },
+  {
+    "korean":"원인",
+    "russian":"причина",
+    "english":"Cause",
+    "example":"의사는 사망 원인을 진단서에 기재한다."
+  },
+  {
+    "korean":"진단서",
+    "russian":"мед заключение",
+    "english":"Medical certificate",
+    "example":"유족은 사망 진단서를 제출해 사망신고를 한다."
+  },
+  {
+    "korean":"유족",
+    "russian":"семья умершего",
+    "english":"Bereaved family",
+    "example":"유족은 30일 이내에 구청에 사망신고를 해야 한다."
+  },
+  {
+    "korean":"과태료",
+    "russian":"штраф",
+    "english":"Fine",
+    "example":"사망신고를 하지 않으면 과태료가 부과된다."
+  },
+  {
+    "korean":"형식",
+    "russian":"форма",
+    "english":"Form",
+    "example":"유언은 일정한 형식을 갖춰야 법적 효력을 가진다."
+  },
+  {
+    "korean":"고인",
+    "russian":"умерший",
+    "english":"Deceased",
+    "example":"고인이 남긴 재산에는 빚도 포함된다."
+  },
+  {
+    "korean":"직계 비속",
+    "russian":"прямые потомки",
+    "english":"Direct descendants",
+    "example":"직계 비속은 1순위 상속인에 해당한다."
+  },
+  {
+    "korean":"직계 존속",
+    "russian":"прямые предки",
+    "english":"Direct ancestors",
+    "example":"부모는 직계 존속으로 2순위 상속인이다."
+  },
+  {
+    "korean":"방계혈족",
+    "russian":"родственники 2-го порядка",
+    "english":"Collateral relatives",
+    "example":"조카는 방계혈족으로 4순위 상속인이 될 수 있다."
+  },
+  {
+    "korean":"앞선",
+    "russian":"имеющий высокий приоритет",
+    "english":"High priority",
+    "example":"상속은 순위가 앞선 사람이 먼저 받는다."
+  },
+  {
+    "korean":"제때",
+    "russian":"вовремя",
+    "english":"On time",
+    "example":"채무자는 돈을 제때 갚지 않았다."
+  },
+  {
+    "korean":"갚다",
+    "russian":"платить",
+    "english":"To pay",
+    "example":"상대방이 빚을 갚지 않으면 가압류를 신청할 수 있다."
+  },
+  {
+    "korean":"가능성",
+    "russian":"вероятность",
+    "english":"Possibility",
+    "example":"채무 불이행 가능성이 있으면 가처분을 신청한다."
+  },
+  {
+    "korean":"가입류",
+    "russian":"арест имущества",
+    "english":"Property seizure",
+    "example":"법원에 가압류를 신청해 채무자의 재산을 묶었다."
+  },
+  {
+    "korean":"가처분",
+    "russian":"предварительное наложение ареста",
+    "english":"Provisional seizure",
+    "example":"가처분 결정으로 채무자는 부동산을 처분할 수 없다."
+  },
+  {
+    "korean":"처분하다",
+    "russian":"распоряжаться",
+    "english":"To dispose of",
+    "example":"가압류 덕분에 채무자는 함부로 재산을 처분하지 못했다."
+  },
+  {
+    "korean":"상황",
+    "russian":"ситуация",
+    "english":"Situation",
+    "example":"보증금을 못 받은 상황에서 임차권 등기명령을 신청했다."
+  },
+  {
+    "korean":"임차권",
+    "russian":"право аренды",
+    "english":"Leasehold right",
+    "example":"임차권 등기명령으로 등기부에 권리가 기재되었다."
+  },
+  {
+    "korean":"등기명령",
+    "russian":"приказ о регистрации",
+    "english":"Registration order",
+    "example":"법원은 임차권 등기명령을 발부했다."
+  },
+  {
+    "korean":"등기부",
+    "russian":"кадастр",
+    "english":"Register (cadastre)",
+    "example":"등기부에 권리를 올려 보증금을 보호받았다."
+  },
+  {
+    "korean":"손해 배상",
+    "russian":"компенсация за ущерб",
+    "english":"Damage compensation",
+    "example":"채무 지연으로 손해 배상을 청구했다."
+  },
+  {
+    "korean":"의사 표시",
+    "russian":"выражение воли",
+    "english":"Expression of intent",
+    "example":"내용증명은 자신의 의사 표시를 증명하는 데 사용된다."
+  },
+  {
+    "korean":"임차료",
+    "russian":"арендная плата",
+    "english":"Rent",
+    "example":"임차인이 임차료를 미납해 내용증명을 보냈다."
+  },
+  {
+    "korean":"임차인",
+    "russian":"съемщик",
+    "english":"Tenant",
+    "example":"임차인은 보증금을 돌려받기 위해 등기명령을 요청했다."
+  },
+  {
+    "korean":"요청하다",
+    "russian":"запрашивать",
+    "english":"To request",
+    "example":"임대인은 미납 임차료 지급을 요청했다."
+  }
+]

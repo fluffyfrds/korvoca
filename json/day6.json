@@ -1,0 +1,278 @@
+[
+  {
+    "korean":"침략하다",
+    "russian":"вторгаться",
+    "english":"To invade",
+    "example":"북한군이 1950년 6월 25일 새벽 남한을 침략하였다."
+  },
+  {
+    "korean":"기습적",
+    "russian":"внезапно",
+    "english":"Sudden",
+    "example":"기습적인 공격으로 전쟁이 시작되었다."
+  },
+  {
+    "korean":"점령하다",
+    "russian":"нападать",
+    "english":"To occupy",
+    "example":"북한군은 3일 만에 서울을 점령하였다."
+  },
+  {
+    "korean":"공격",
+    "russian":"атака\/нападение",
+    "english":"Attack",
+    "example":"유엔은 북한의 공격을 침략으로 규정했다."
+  },
+  {
+    "korean":"침략",
+    "russian":"агрессия",
+    "english":"Aggression",
+    "example":"국제사회는 이번 사건을 일방적 침략으로 보았다."
+  },
+  {
+    "korean":"규정하다",
+    "russian":"определять",
+    "english":"To define",
+    "example":"UN은 북한의 행위를 침략으로 규정하였다."
+  },
+  {
+    "korean":"밀리다",
+    "russian":"отступать",
+    "english":"To be pushed back",
+    "example":"국군은 낙동강까지 밀렸지만 반격을 준비했다."
+  },
+  {
+    "korean":"상륙",
+    "russian":"десант\/высадка",
+    "english":"Landing",
+    "example":"인천 상륙 작전이 전세를 뒤집었다."
+  },
+  {
+    "korean":"작전",
+    "russian":"операция\/манёвр",
+    "english":"Operation",
+    "example":"인천 상륙 작전은 전쟁의 흐름을 바꿨다."
+  },
+  {
+    "korean":"되찾다",
+    "russian":"получить обратно",
+    "english":"To regain",
+    "example":"국군과 유엔군은 서울을 되찾았다."
+  },
+  {
+    "korean":"당시",
+    "russian":"в то время",
+    "english":"At that time",
+    "example":"당시 중국은 대규모 병력을 보내 반격했다."
+  },
+  {
+    "korean":"대규모",
+    "russian":"крупные",
+    "english":"Large-scale",
+    "example":"중국군의 대규모 투입으로 전선이 교착되었다."
+  },
+  {
+    "korean":"반격하다",
+    "russian":"ответить контрударом",
+    "english":"To counterattack",
+    "example":"국군과 유엔군은 북진을 위해 반격하였다."
+  },
+  {
+    "korean":"후퇴하다",
+    "russian":"отступать",
+    "english":"To retreat",
+    "example":"1.4 후퇴로 서울을 다시 빼앗겼다."
+  },
+  {
+    "korean":"원칙",
+    "russian":"принцип",
+    "english":"Principle",
+    "example":"7·4 공동 성명은 통일의 세 가지 원칙을 제시했다."
+  },
+  {
+    "korean":"성명",
+    "russian":"заявление",
+    "english":"Statement",
+    "example":"양측은 공동 성명을 발표했다."
+  },
+  {
+    "korean":"회담",
+    "russian":"переговоры",
+    "english":"Talks\/negotiations",
+    "example":"남북 회담이 여러 차례 열렸다."
+  },
+  {
+    "korean":"중단",
+    "russian":"прекращение",
+    "english":"Suspension",
+    "example":"북한의 회담 중단 선언으로 대화가 멈췄다."
+  },
+  {
+    "korean":"선언",
+    "russian":"заявление",
+    "english":"Declaration",
+    "example":"6·15 공동 선언은 교류 확대를 약속했다."
+  },
+  {
+    "korean":"가입하다",
+    "russian":"вступить",
+    "english":"To join",
+    "example":"남북한은 1991년 동시에 UN에 가입하였다."
+  },
+  {
+    "korean":"체제",
+    "russian":"режим",
+    "english":"Regime\/system",
+    "example":"남북은 서로의 체제를 인정하기로 했다."
+  },
+  {
+    "korean":"인정하다",
+    "russian":"признавать",
+    "english":"To acknowledge",
+    "example":"기본 합의서는 상대 체제를 인정한다고 명시했다."
+  },
+  {
+    "korean":"핵무기",
+    "russian":"ядерное оружие",
+    "english":"Nuclear weapon",
+    "example":"한반도 비핵화를 위한 선언이 있었지만 핵무기 의혹은 계속됐다."
+  },
+  {
+    "korean":"의혹",
+    "russian":"подозрение",
+    "english":"Suspicion",
+    "example":"북한의 핵 개발 의혹이 제기되었다."
+  },
+  {
+    "korean":"악화하다",
+    "russian":"ухудшаться",
+    "english":"To worsen",
+    "example":"핵 문제로 남북 관계가 악화하였다."
+  },
+  {
+    "korean":"햇볕 정책",
+    "russian":"Политика солнечного света",
+    "english":"Sunshine Policy",
+    "example":"햇볕 정책으로 금강산 관광이 시작되었다."
+  },
+  {
+    "korean":"국방",
+    "russian":"военное дело",
+    "english":"National defense",
+    "example":"김정일 국방 위원장은 정상 회담에 참석했다."
+  },
+  {
+    "korean":"위원장",
+    "russian":"глава",
+    "english":"Chairperson\/head",
+    "example":"김정일 국방 위원장은 공동 선언에 서명했다."
+  },
+  {
+    "korean":"빼앗기다",
+    "russian":"быть захваченным",
+    "english":"To be taken away",
+    "example":"서울은 두 차례나 빼앗기고 되찾겼다."
+  },
+  {
+    "korean":"치열한 전투",
+    "russian":"настойчивая борьба",
+    "english":"Fierce battle",
+    "example":"휴전선 부근에서 치열한 전투가 계속되었다."
+  },
+  {
+    "korean":"양측",
+    "russian":"обе стороны",
+    "english":"Both sides",
+    "example":"양측의 피해가 크게 늘어났다."
+  },
+  {
+    "korean":"피해",
+    "russian":"потери",
+    "english":"Damage\/loss",
+    "example":"전쟁이 길어지며 인명 피해가 컸다."
+  },
+  {
+    "korean":"자지하다",
+    "russian":"получать владение",
+    "english":"To possess",
+    "example":"양측은 조금의 땅이라도 자지하려고 싸웠다."
+  },
+  {
+    "korean":"체결되다",
+    "russian":"быть подписанным",
+    "english":"To be signed",
+    "example":"정전 협정은 1953년 7월 27일 체결되었다."
+  },
+  {
+    "korean":"휴전선",
+    "russian":"линия перемирия",
+    "english":"Armistice line",
+    "example":"휴전선은 오늘날까지 군사 경계선으로 남아 있다."
+  },
+  {
+    "korean":"경계",
+    "russian":"граница",
+    "english":"Border",
+    "example":"휴전선은 남북의 경계가 되었다."
+  },
+  {
+    "korean":"이어지다",
+    "russian":"продолжаться",
+    "english":"To continue",
+    "example":"분단은 오늘날까지 이어지고 있다."
+  },
+  {
+    "korean":"교류",
+    "russian":"обмен",
+    "english":"Exchange",
+    "example":"정상 회담 이후 경제 교류가 확대되었다."
+  },
+  {
+    "korean":"상봉",
+    "russian":"встреча",
+    "english":"Reunion\/meeting",
+    "example":"이산가족 상봉 행사가 열렸다."
+  },
+  {
+    "korean":"지향하다",
+    "russian":"стремиться",
+    "english":"To aim\/strive for",
+    "example":"남북은 평화를 지향하는 공동 선언을 발표했다."
+  },
+  {
+    "korean":"협력",
+    "russian":"сотрудничество",
+    "english":"Cooperation",
+    "example":"경제 협력을 늘리기로 합의했다."
+  },
+  {
+    "korean":"늘리기다",
+    "russian":"расширить",
+    "english":"To expand",
+    "example":"남북은 교류를 늘리기 위해 노력했다."
+  },
+  {
+    "korean":"계기",
+    "russian":"повод\/причина",
+    "english":"Opportunity\/reason",
+    "example":"평창 올림픽을 계기로 남북 관계가 개선되었다."
+  },
+  {
+    "korean":"위기",
+    "russian":"кризис",
+    "english":"Crisis",
+    "example":"핵 실험은 한반도 위기를 심화시켰다."
+  },
+  {
+    "korean":"화해",
+    "russian":"мир",
+    "english":"Reconciliation\/peace",
+    "example":"정상 회담은 남북 화해 분위기를 조성했다."
+  },
+  {
+    "korean":"조성하다",
+    "russian":"создавать",
+    "english":"To create",
+    "example":"정부는 화해와 협력의 분위기를 조성했다."
+  }
+]

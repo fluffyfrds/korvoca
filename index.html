@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KorVoca - 한국어 단어 학습</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .mode-selector {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .mode-selector h3 {
+            margin-bottom: 15px;
+            color: #5a67d8;
+        }
+
+        .mode-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .mode-btn {
+            padding: 10px 20px;
+            border: 2px solid #5a67d8;
+            background: white;
+            color: #5a67d8;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .mode-btn.active {
+            background: #5a67d8;
+            color: white;
+        }
+
+        .mode-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(90,103,216,0.3);
+        }
+
+        .day-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .day-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border: 3px solid transparent;
+        }
+
+        .day-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            border-color: #5a67d8;
+        }
+
+        .day-card.selected {
+            border-color: #5a67d8;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .day-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .day-progress {
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 8px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #48bb78, #38b2ac);
+            transition: width 0.3s ease;
+        }
+
+        .day-card.selected .progress-bar {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .day-card.selected .progress-fill {
+            background: rgba(255,255,255,0.8);
+        }
+
+        .start-btn {
+            background: linear-gradient(135deg, #48bb78, #38b2ac);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(72,187,120,0.3);
+            display: block;
+            margin: 0 auto;
+        }
+
+        .start-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(72,187,120,0.4);
+        }
+
+        .start-btn:disabled {
+            background: #cbd5e0;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .quiz-container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            display: none;
+        }
+
+        .quiz-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .quiz-progress {
+            font-size: 1.1em;
+            color: #5a67d8;
+            font-weight: bold;
+        }
+
+        .korean-word {
+            font-size: 2.5em;
+            text-align: center;
+            margin: 30px 0;
+            color: #2d3748;
+            font-weight: bold;
+            padding: 20px;
+            background: linear-gradient(135deg, #f7fafc, #edf2f7);
+            border-radius: 15px;
+            border-left: 5px solid #5a67d8;
+        }
+
+        .example-sentence {
+            text-align: center;
+            margin-bottom: 30px;
+            font-style: italic;
+            color: #718096;
+            font-size: 1.1em;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .option {
+            padding: 20px;
+            border: 2px solid #e2e8f0;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            font-size: 1.1em;
+            background: white;
+        }
+
+        .option:hover {
+            border-color: #5a67d8;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(90,103,216,0.2);
+        }
+
+        .option.correct {
+            background: linear-gradient(135deg, #48bb78, #38b2ac);
+            color: white;
+            border-color: #48bb78;
+        }
+
+        .option.incorrect {
+            background: linear-gradient(135deg, #f56565, #e53e3e);
+            color: white;
+            border-color: #f56565;
+        }
+
+        .option.disabled {
+            pointer-events: none;
+        }
+
+        .next-btn {
+            background: linear-gradient(135deg, #5a67d8, #667eea);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .next-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(90,103,216,0.3);
+        }
+
+        .back-btn {
+            background: #718096;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: #4a5568;
+            transform: translateY(-1px);
+        }
+
+        .result-container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            display: none;
+        }
+
+        .result-score {
+            font-size: 3em;
+            font-weight: bold;
+            color: #5a67d8;
+            margin-bottom: 20px;
+        }
+
+        .result-message {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            color: #2d3748;
+        }
+
+        @media (max-width: 768px) {
+            .options {
+                grid-template-columns: 1fr;
+            }
+            
+            .mode-buttons {
+                justify-content: center;
+            }
+            
+            .korean-word {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🇰🇷 KorVoca</h1>
+            <p>한국어 단어 학습 앱</p>
+        </div>
+
+        <div id="mainMenu" class="main-menu">
+            <div class="mode-selector">
+                <h3>📚 학습 모드 선택</h3>
+                <div class="mode-buttons">
+                    <button class="mode-btn active" data-mode="russian">🇷🇺 러시아어</button>
+                    <button class="mode-btn" data-mode="english">🇺🇸 영어</button>
+                    <button class="mode-btn" data-mode="both">🌍 둘 다</button>
+                </div>
+            </div>
+
+            <div class="day-grid" id="dayGrid">
+                <!-- Day cards will be generated here -->
+            </div>
+
+            <button class="start-btn" id="startBtn" disabled>학습 시작</button>
+        </div>
+
+        <div id="quizContainer" class="quiz-container">
+            <div class="quiz-header">
+                <button class="back-btn" id="backBtn">← 돌아가기</button>
+                <div class="quiz-progress" id="quizProgress">1 / 20</div>
+            </div>
+
+            <div class="korean-word" id="koreanWord">loading...</div>
+            <div class="example-sentence" id="exampleSentence">예문이 여기에 표시됩니다.</div>
+
+            <div class="options" id="optionsContainer">
+                <!-- Options will be generated here -->
+            </div>
+
+            <button class="next-btn" id="nextBtn" style="display: none;">다음 문제</button>
+        </div>
+
+        <div id="resultContainer" class="result-container">
+            <div class="result-score" id="resultScore">85%</div>
+            <div class="result-message" id="resultMessage">훌륭합니다!</div>
+            <button class="start-btn" id="restartBtn">다시 시작</button>
+        </div>
+    </div>
+
+    <script>
+        // 샘플 데이터 (실제로는 JSON 파일에서 로드)
+        const sampleWords = [
+            {korean: "굳어지다", russian: "укрепиться", english: "to harden", example: "양국의 대립이 점점 굳어지고 있다."},
+            {korean: "접근하다", russian: "приближаться", english: "to approach", example: "문제에 체계적으로 접근해야 한다."},
+            {korean: "발견하다", russian: "обнаружить", english: "to discover", example: "새로운 사실을 발견했다."},
+            {korean: "해결하다", russian: "решать", english: "to solve", example: "이 문제를 해결하기 위해 노력하고 있다."},
+            {korean: "개발하다", russian: "развивать", english: "to develop", example: "새로운 기술을 개발하고 있다."},
+            {korean: "연구하다", russian: "исследовать", english: "to research", example: "이 분야를 깊이 연구하고 있다."},
+            {korean: "분석하다", russian: "анализировать", english: "to analyze", example: "데이터를 자세히 분석했다."},
+            {korean: "관찰하다", russian: "наблюдать", english: "to observe", example: "현상을 주의깊게 관찰했다."},
+            {korean: "설명하다", russian: "объяснять", english: "to explain", example: "원리를 쉽게 설명해주었다."},
+            {korean: "증명하다", russian: "доказывать", english: "to prove", example: "이론을 실험으로 증명했다."}
+        ];
+
+        // 추가 단어 풀 (선택지용)
+        const additionalRussianWords = [
+            "понимать", "изучать", "работать", "думать", "говорить", "делать", 
+            "знать", "видеть", "слышать", "чувствовать", "находить", "получать",
+            "становиться", "оставаться", "идти", "приходить", "жить", "играть"
+        ];
+
+        const additionalEnglishWords = [
+            "to understand", "to study", "to work", "to think", "to speak", "to make",
+            "to know", "to see", "to hear", "to feel", "to find", "to get",
+            "to become", "to remain", "to go", "to come", "to live", "to play"
+        ];
+
+        // 앱 상태
+        let currentMode = 'russian';
+        let selectedDay = null;
+        let currentWords = [];
+        let currentQuestionIndex = 0;
+        let correctAnswers = 0;
+        let dayProgress = {};
+
+        // 로컬 스토리지에서 진도 불러오기
+        function loadProgress() {
+            const saved = localStorage.getItem('korvoca_progress');
+            if (saved) {
+                dayProgress = JSON.parse(saved);
+            } else {
+                // 기본 진도 데이터
+                for (let i = 1; i <= 20; i++) {
+                    dayProgress[i] = { progress: 0, rounds: 0 };
+                }
+            }
+        }
+
+        // 진도 저장
+        function saveProgress() {
+            localStorage.setItem('korvoca_progress', JSON.stringify(dayProgress));
+        }
+
+        // Day 카드 생성
+        function generateDayCards() {
+            const dayGrid = document.getElementById('dayGrid');
+            dayGrid.innerHTML = '';
+
+            for (let i = 1; i <= 20; i++) {
+                const progress = dayProgress[i] || { progress: 0, rounds: 0 };
+                const card = document.createElement('div');
+                card.className = 'day-card';
+                card.dataset.day = i;
+                
+                card.innerHTML = `
+                    <div class="day-title">Day ${i}</div>
+                    <div class="day-progress">진도: ${progress.progress}%</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: ${progress.progress}%"></div>
+                    </div>
+                    <div class="day-progress">회독: ${progress.rounds}회</div>
+                `;
+
+                card.addEventListener('click', () => selectDay(i));
+                dayGrid.appendChild(card);
+            }
+        }
+
+        // Day 선택
+        function selectDay(day) {
+            document.querySelectorAll('.day-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            
+            document.querySelector(`[data-day="${day}"]`).classList.add('selected');
+            selectedDay = day;
+            document.getElementById('startBtn').disabled = false;
+        }
+
+        // 모드 선택
+        document.querySelectorAll('.mode-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentMode = btn.dataset.mode;
+            });
+        });
+
+        // 퀴즈 시작
+        document.getElementById('startBtn').addEventListener('click', startQuiz);
+
+        async function startQuiz() {
+            if (!selectedDay) return;
+
+            try {
+                // 서버 API를 통해 JSON 데이터 로드
+                const apiUrl = `/api/day/${selectedDay}`;
+                console.log(`로딩 중: Day ${selectedDay} 데이터`);
+                
+                const response = await fetch(apiUrl);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const wordsData = await response.json();
+                console.log(`Day ${selectedDay} 데이터 로드 성공:`, wordsData.length, '개 단어');
+                
+                currentWords = Array.isArray(wordsData) ? [...wordsData] : [...sampleWords];
+                currentQuestionIndex = 0;
+                correctAnswers = 0;
+
+                document.getElementById('mainMenu').style.display = 'none';
+                document.getElementById('quizContainer').style.display = 'block';
+                
+                showQuestion();
+                
+            } catch (error) {
+                console.error('데이터 로드 실패:', error);
+                alert(`Day ${selectedDay} 데이터를 불러올 수 없습니다. 샘플 데이터를 사용합니다.\n오류: ${error.message}`);
+                
+                currentWords = [...sampleWords];
+                currentQuestionIndex = 0;
+                correctAnswers = 0;
+
+                document.getElementById('mainMenu').style.display = 'none';
+                document.getElementById('quizContainer').style.display = 'block';
+                
+                showQuestion();
+            }
+        }
+
+        // 문제 표시
+        function showQuestion() {
+            const word = currentWords[currentQuestionIndex];
+            const totalQuestions = currentWords.length;
+            
+            document.getElementById('quizProgress').textContent = `${currentQuestionIndex + 1} / ${totalQuestions}`;
+            document.getElementById('koreanWord').textContent = word.korean;
+            document.getElementById('exampleSentence').textContent = word.example;
+            document.getElementById('nextBtn').style.display = 'none';
+
+            generateOptions(word);
+        }
+
+        // 선택지 생성
+        function generateOptions(correctWord) {
+            const optionsContainer = document.getElementById('optionsContainer');
+            optionsContainer.innerHTML = '';
+
+            let correctAnswer;
+            let wrongAnswers = [];
+
+            // 모드에 따라 정답과 오답 생성
+            if (currentMode === 'russian') {
+                correctAnswer = correctWord.russian;
+                wrongAnswers = getRandomWords(additionalRussianWords, 3);
+            } else if (currentMode === 'english') {
+                correctAnswer = correctWord.english;
+                wrongAnswers = getRandomWords(additionalEnglishWords, 3);
+            } else { // both
+                if (Math.random() < 0.5) {
+                    correctAnswer = correctWord.russian;
+                    wrongAnswers = getRandomWords(additionalRussianWords, 3);
+                } else {
+                    correctAnswer = correctWord.english;
+                    wrongAnswers = getRandomWords(additionalEnglishWords, 3);
+                }
+            }
+
+            // 선택지 배열 생성 및 섞기
+            const allOptions = [correctAnswer, ...wrongAnswers];
+            shuffleArray(allOptions);
+
+            // 선택지 버튼 생성
+            allOptions.forEach(option => {
+                const button = document.createElement('button');
+                button.className = 'option';
+                button.textContent = option;
+                button.addEventListener('click', () => selectOption(button, option, correctAnswer));
+                optionsContainer.appendChild(button);
+            });
+        }
+
+        // 선택지 선택
+        function selectOption(button, selected, correct) {
+            const options = document.querySelectorAll('.option');
+            options.forEach(opt => opt.classList.add('disabled'));
+
+            if (selected === correct) {
+                button.classList.add('correct');
+                correctAnswers++;
+            } else {
+                button.classList.add('incorrect');
+                // 정답 표시
+                options.forEach(opt => {
+                    if (opt.textContent === correct) {
+                        opt.classList.add('correct');
+                    }
+                });
+            }
+
+            document.getElementById('nextBtn').style.display = 'block';
+        }
+
+        // 다음 문제
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            currentQuestionIndex++;
+            
+            if (currentQuestionIndex < currentWords.length) {
+                showQuestion();
+            } else {
+                showResult();
+            }
+        });
+
+        // 결과 표시
+        function showResult() {
+            const percentage = Math.round((correctAnswers / currentWords.length) * 100);
+            
+            // 진도 업데이트
+            dayProgress[selectedDay].progress = percentage;
+            if (percentage === 100) {
+                dayProgress[selectedDay].rounds++;
+            }
+            saveProgress();
+
+            document.getElementById('quizContainer').style.display = 'none';
+            document.getElementById('resultContainer').style.display = 'block';
+            
+            document.getElementById('resultScore').textContent = `${percentage}%`;
+            
+            let message = '';
+            if (percentage >= 90) message = '완벽합니다! 🎉';
+            else if (percentage >= 80) message = '훌륭합니다! 👏';
+            else if (percentage >= 70) message = '좋습니다! 👍';
+            else if (percentage >= 60) message = '괜찮습니다! 😊';
+            else message = '더 연습해보세요! 💪';
+            
+            document.getElementById('resultMessage').textContent = message;
+        }
+
+        // 돌아가기 버튼
+        document.getElementById('backBtn').addEventListener('click', () => {
+            document.getElementById('quizContainer').style.display = 'none';
+            document.getElementById('mainMenu').style.display = 'block';
+            generateDayCards(); // 진도 업데이트 반영
+        });
+
+        // 다시 시작 버튼
+        document.getElementById('restartBtn').addEventListener('click', () => {
+            document.getElementById('resultContainer').style.display = 'none';
+            document.getElementById('mainMenu').style.display = 'block';
+            generateDayCards(); // 진도 업데이트 반영
+        });
+
+        // 유틸리티 함수들
+        function getRandomWords(wordArray, count) {
+            const shuffled = [...wordArray].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, count);
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        // 앱 초기화
+        function initApp() {
+            loadProgress();
+            generateDayCards();
+        }
+
+        // 앱 시작
+        initApp();
+    </script>
+</body>
+</html>

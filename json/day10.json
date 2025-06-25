@@ -1,0 +1,284 @@
+[
+  {
+    "korean":"맡기다",
+    "russian":"поручать",
+    "english":"To entrust",
+    "example":"국민은 선거를 통해 대표자에게 나라의 일을 맡긴다."
+  },
+  {
+    "korean":"채택하다",
+    "russian":"принимать",
+    "english":"To adopt",
+    "example":"대의 민주주의를 채택한 국가는 대표를 뽑아 의사를 결정한다."
+  },
+  {
+    "korean":"실현하다",
+    "russian":"осуществить",
+    "english":"To realize",
+    "example":"선거는 국민의 주권을 실현하는 대표적인 방법이다."
+  },
+  {
+    "korean":"대표적인",
+    "russian":"типичный",
+    "english":"Representative",
+    "example":"선거는 대표적인 민주적 제도이다."
+  },
+  {
+    "korean":"공식적",
+    "russian":"официально",
+    "english":"Official",
+    "example":"선거를 통해 공식적으로 대표자를 결정한다."
+  },
+  {
+    "korean":"설립된",
+    "russian":"избираемый",
+    "english":"Established",
+    "example":"선거관리위원회는 헌법에 설립된 중립 기관이다."
+  },
+  {
+    "korean":"정당성",
+    "russian":"законность",
+    "english":"Legitimacy",
+    "example":"선출된 대표자는 권력의 정당성을 얻는다."
+  },
+  {
+    "korean":"통제하다",
+    "russian":"контролировать",
+    "english":"To control",
+    "example":"선거는 대표자의 권력을 통제하는 기능을 한다."
+  },
+  {
+    "korean":"공약",
+    "russian":"обещание",
+    "english":"Promise",
+    "example":"후보자는 국민 뜻을 반영한 공약을 제시한다."
+  },
+  {
+    "korean":"반영한",
+    "russian":"отражающий",
+    "english":"Reflecting",
+    "example":"공약은 국민의 요구를 반영한 정책 방향이다."
+  },
+  {
+    "korean":"선거관리위원회",
+    "russian":"избират. комиссия",
+    "english":"Election management committee",
+    "example":"선거관리위원회가 투표와 개표를 관리한다."
+  },
+  {
+    "korean":"중립적인",
+    "russian":"нейтральный",
+    "english":"Neutral",
+    "example":"선관위는 중립적인 입장에서 선거를 운영한다."
+  },
+  {
+    "korean":"개표",
+    "russian":"подсчет голосов",
+    "english":"Vote counting",
+    "example":"개표 결과는 실시간으로 공개된다."
+  },
+  {
+    "korean":"위반하다",
+    "russian":"нарушать",
+    "english":"To violate",
+    "example":"선거법을 위반하면 처벌을 받는다."
+  },
+  {
+    "korean":"행위",
+    "russian":"действие",
+    "english":"Act, behavior",
+    "example":"불법 선거 행위는 단속 대상이다."
+  },
+  {
+    "korean":"단속하다",
+    "russian":"контролировать",
+    "english":"To regulate",
+    "example":"선관위는 불법 행위를 단속한다."
+  },
+  {
+    "korean":"홍보",
+    "russian":"продвижение",
+    "english":"Promotion",
+    "example":"선관위는 투표 참여 홍보를 담당한다."
+  },
+  {
+    "korean":"담당하다",
+    "russian":"отвечать",
+    "english":"To be responsible for",
+    "example":"선관위가 선거 비용 보전을 담당한다."
+  },
+  {
+    "korean":"공적",
+    "russian":"гос. финансирование",
+    "english":"Public financing",
+    "example":"공적 선거 비용 보전 제도가 시행된다."
+  },
+  {
+    "korean":"투표한",
+    "russian":"набравшие голоса",
+    "english":"Voted",
+    "example":"15% 이상 득표한 후보는 비용 전액을 돌려받는다."
+  },
+  {
+    "korean":"후보",
+    "russian":"кандидат",
+    "english":"Candidate",
+    "example":"후보 등록 후 공식 선거운동이 시작된다."
+  },
+  {
+    "korean":"돌려받다",
+    "russian":"получить возврат",
+    "english":"To get a refund",
+    "example":"10% 이상 득표하면 비용의 절반을 돌려받을 수 있다."
+  },
+  {
+    "korean":"미만",
+    "russian":"менее",
+    "english":"Less than",
+    "example":"10% 미만 득표자는 비용을 돌려받지 못한다."
+  },
+  {
+    "korean":"경쟁",
+    "russian":"конкуренция",
+    "english":"Competition",
+    "example":"공영제는 지나친 경쟁을 완화한다."
+  },
+  {
+    "korean":"갈등",
+    "russian":"конфликт",
+    "english":"Conflict",
+    "example":"과열 경쟁은 사회 갈등을 유발할 수 있다."
+  },
+  {
+    "korean":"기회",
+    "russian":"возможность",
+    "english":"Opportunity",
+    "example":"공영제는 후보자 모두에게 균등한 기회를 제공한다."
+  },
+  {
+    "korean":"균등",
+    "russian":"равномерно",
+    "english":"Evenly",
+    "example":"선거 운동 기회를 균등하게 보장한다."
+  },
+  {
+    "korean":"견해",
+    "russian":"взгляд\/мнение",
+    "english":"View\/opinion",
+    "example":"정당은 정치적 견해가 비슷한 사람의 모임이다."
+  },
+  {
+    "korean":"각종",
+    "russian":"различные",
+    "english":"Various",
+    "example":"각종 공약과 정책을 개발해 경쟁한다."
+  },
+  {
+    "korean":"경쟁하다",
+    "russian":"конкурировать",
+    "english":"To compete",
+    "example":"정당들은 선거에서 경쟁한다."
+  },
+  {
+    "korean":"소속하다",
+    "russian":"входить в состав",
+    "english":"To belong to",
+    "example":"대부분의 국회의원은 정당에 소속한다."
+  },
+  {
+    "korean":"이루어지다",
+    "russian":"происходить",
+    "english":"To be accomplished",
+    "example":"선거는 정당 중심으로 이루어진다."
+  },
+  {
+    "korean":"여당",
+    "russian":"правящая партия",
+    "english":"Ruling party",
+    "example":"대통령이 속한 정당이 여당이 된다."
+  },
+  {
+    "korean":"이외",
+    "russian":"вне\/кроме",
+    "english":"Besides\/except",
+    "example":"여당 이외의 정당은 야당으로 불린다."
+  },
+  {
+    "korean":"야당",
+    "russian":"оппозиция",
+    "english":"Opposition",
+    "example":"야당은 여당을 견제한다."
+  },
+  {
+    "korean":"견제하다",
+    "russian":"ограничивать",
+    "english":"To check\/restrict",
+    "example":"야당은 정부 권력을 견제하는 역할을 한다."
+  },
+  {
+    "korean":"의석수",
+    "russian":"кол-во мест",
+    "english":"Number of seats",
+    "example":"제1야당은 의석수가 가장 많은 야당이다."
+  },
+  {
+    "korean":"중심제",
+    "russian":"президентская республика",
+    "english":"Presidential system",
+    "example":"한국은 대통령 중심제 국가이다."
+  },
+  {
+    "korean":"상황",
+    "russian":"ситуация",
+    "english":"Situation",
+    "example":"여대야소 상황에서는 여당이 법안을 추진하기 쉽다."
+  },
+  {
+    "korean":"추구하다",
+    "russian":"стремиться",
+    "english":"To pursue",
+    "example":"정당은 국민의 이익을 추구한다."
+  },
+  {
+    "korean":"대변하다",
+    "russian":"защищать",
+    "english":"To represent\/defend",
+    "example":"정당은 국민의 이익을 대변한다."
+  },
+  {
+    "korean":"제대로",
+    "russian":"правильно",
+    "english":"Properly",
+    "example":"정당이 정치를 제대로 못하면 지지를 잃는다."
+  },
+  {
+    "korean":"복수 정당제",
+    "russian":"многопартийная система",
+    "english":"Multiparty system",
+    "example":"헌법은 복수 정당제를 보장한다."
+  },
+  {
+    "korean":"존재하다",
+    "russian":"существовать",
+    "english":"To exist",
+    "example":"두 개 이상의 정당이 존재해야 다양한 의견이 반영된다."
+  },
+  {
+    "korean":"특정",
+    "russian":"определённый",
+    "english":"Specific",
+    "example":"특정 세력이 권력을 독점하면 민주주의가 위협받는다."
+  },
+  {
+    "korean":"세력",
+    "russian":"влиятельные группы",
+    "english":"Power\/influential groups",
+    "example":"특정 세력이 정치 권력을 독점하지 않도록 해야 한다."
+  },
+  {
+    "korean":"독점하다",
+    "russian":"монополизировать",
+    "english":"To monopolize",
+    "example":"단일 정당이 권력을 독점하면 다양한 목소리가 사라진다."
+  }
+]

@@ -1,0 +1,230 @@
+[
+  {
+    "korean":"정규직근로자",
+    "russian":"постоянный работник",
+    "english":"Regular employee",
+    "example":"정규직근로자는 무기계약으로 고용 안정성이 높다."
+  },
+  {
+    "korean":"비정규직근로자",
+    "russian":"временный работник",
+    "english":"Temporary employee",
+    "example":"비정규직근로자는 계약 기간이 끝나면 고용이 종료될 수 있다."
+  },
+  {
+    "korean":"단시간",
+    "russian":"краткосрочный",
+    "english":"Short-term",
+    "example":"단시간 근로자는 하루 4시간씩 근무한다."
+  },
+  {
+    "korean":"불안감",
+    "russian":"беспокойство",
+    "english":"Anxiety",
+    "example":"고용 기간이 짧아 불안감을 느낄 수 있다."
+  },
+  {
+    "korean":"측면",
+    "russian":"аспект",
+    "english":"Aspect",
+    "example":"근로 조건 측면에서 차별이 없어야 한다."
+  },
+  {
+    "korean":"합리적",
+    "russian":"разумный",
+    "english":"Rational",
+    "example":"합리적 이유 없는 차별은 법으로 금지된다."
+  },
+  {
+    "korean":"부당한",
+    "russian":"неправомерный",
+    "english":"Unjust",
+    "example":"부당한 대우를 받으면 신고할 수 있다."
+  },
+  {
+    "korean":"사업주",
+    "russian":"работодатель",
+    "english":"Employer",
+    "example":"사업주는 근로계약서를 작성해야 한다."
+  },
+  {
+    "korean":"감독",
+    "russian":"контроль",
+    "english":"Supervision",
+    "example":"근로 감독 기관이 사업장을 점검했다."
+  },
+  {
+    "korean":"퇴직금",
+    "russian":"выходное пособие",
+    "english":"Severance pay",
+    "example":"1년 이상 근무하면 퇴직금을 받을 수 있다."
+  },
+  {
+    "korean":"연차휴가",
+    "russian":"годовой отпуск",
+    "english":"Annual leave",
+    "example":"연차휴가를 사용해 여행을 다녀왔다."
+  },
+  {
+    "korean":"개근하다",
+    "russian":"иметь полный рабочий график",
+    "english":"Perfect attendance",
+    "example":"한 달 동안 개근하면 유급휴가 1일이 발생한다."
+  },
+  {
+    "korean":"성희롱",
+    "russian":"секс домогательство",
+    "english":"Sexual harassment",
+    "example":"직장 성희롱은 법적 처벌 대상이다."
+  },
+  {
+    "korean":"성적인",
+    "russian":"секс-ый",
+    "english":"Sexual",
+    "example":"성적인 농담은 직장에서 금지된다."
+  },
+  {
+    "korean":"수치심",
+    "russian":"стыд",
+    "english":"Shame",
+    "example":"성희롱은 피해자에게 수치심을 준다."
+  },
+  {
+    "korean":"혐오감",
+    "russian":"отвращение",
+    "english":"Disgust",
+    "example":"불쾌한 사진은 혐오감을 유발한다."
+  },
+  {
+    "korean":"신체적",
+    "russian":"физический",
+    "english":"Physical",
+    "example":"신체적 접촉은 성희롱에 해당할 수 있다."
+  },
+  {
+    "korean":"접촉",
+    "russian":"контакт",
+    "english":"Contact",
+    "example":"불필요한 신체적 접촉은 피해야 한다."
+  },
+  {
+    "korean":"불쾌한",
+    "russian":"неприятный",
+    "english":"Unpleasant",
+    "example":"불쾌한 언행은 즉시 중단해야 한다."
+  },
+  {
+    "korean":"해당하다",
+    "russian":"относиться",
+    "english":"To apply to",
+    "example":"이 사례는 직장 내 성희롱에 해당한다."
+  },
+  {
+    "korean":"가해자",
+    "russian":"преступник",
+    "english":"Perpetrator",
+    "example":"가해자는 징계와 형사 처벌을 받을 수 있다."
+  },
+  {
+    "korean":"피해자",
+    "russian":"жертва",
+    "english":"Victim",
+    "example":"피해자는 고충처리기관에 도움을 요청했다."
+  },
+  {
+    "korean":"당하다",
+    "russian":"стать жертвой",
+    "english":"To suffer\/be victimized",
+    "example":"성희롱을 당하면 거부 의사를 밝혀야 한다."
+  },
+  {
+    "korean":"거부",
+    "russian":"отказ",
+    "english":"Refusal",
+    "example":"명확한 거부 의사가 중요하다."
+  },
+  {
+    "korean":"유급휴가",
+    "russian":"оплачиваемый отпуск",
+    "english":"Paid leave",
+    "example":"산전후휴가는 유급휴가로 보장된다."
+  },
+  {
+    "korean":"분명히",
+    "russian":"чётко",
+    "english":"Clearly",
+    "example":"문제 행동을 분명히 지적했다."
+  },
+  {
+    "korean":"밝히다",
+    "russian":"выразить",
+    "english":"To express",
+    "example":"피해자는 불쾌감을 분명히 밝혔다."
+  },
+  {
+    "korean":"중단하다",
+    "russian":"прекратить",
+    "english":"To stop",
+    "example":"가해자에게 즉시 행위를 중단하라고 요구했다."
+  },
+  {
+    "korean":"요청하다",
+    "russian":"просить",
+    "english":"To request",
+    "example":"피해자는 공식 사과를 요청했다."
+  },
+  {
+    "korean":"고충처리기관",
+    "russian":"орган по обработке жалоб",
+    "english":"Grievance handling agency",
+    "example":"회사 고충처리기관에 신고서를 제출했다."
+  },
+  {
+    "korean":"고용노동부",
+    "russian":"министерство труда и занятости",
+    "english":"Ministry of Employment and Labor",
+    "example":"심각한 경우 고용노동부에 신고할 수 있다."
+  },
+  {
+    "korean":"국가인권위원회",
+    "russian":"нац комиссия по правам человека",
+    "english":"National Human Rights Commission",
+    "example":"국가인권위원회는 인권 침해를 조사한다."
+  },
+  {
+    "korean":"민사재판",
+    "russian":"гражданский суд",
+    "english":"Civil court",
+    "example":"피해자는 민사재판으로 손해배상을 청구했다."
+  },
+  {
+    "korean":"손해배상",
+    "russian":"возмещение убытков",
+    "english":"Damage compensation",
+    "example":"법원은 손해배상 500만원을 인정했다."
+  },
+  {
+    "korean":"장려하다",
+    "russian":"поощрять",
+    "english":"To encourage",
+    "example":"정부는 남성 육아휴직을 장려한다."
+  },
+  {
+    "korean":"무급",
+    "russian":"без оплаты",
+    "english":"Unpaid",
+    "example":"생리휴가는 무급으로 제공된다."
+  },
+  {
+    "korean":"단축하다",
+    "russian":"сокращать",
+    "english":"To shorten",
+    "example":"임신 여성은 근로시간을 단축할 수 있다."
+  },
+  {
+    "korean":"수유시간",
+    "russian":"время для кормления",
+    "english":"Breastfeeding time",
+    "example":"회사에서 하루 두 번 수유시간을 제공한다."
+  }
+]

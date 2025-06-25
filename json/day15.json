@@ -1,0 +1,194 @@
+[
+  {
+    "korean":"제공하다",
+    "russian":"предоставлять",
+    "english":"To provide",
+    "example":"기업은 근로자에게 일자리를 제공한다."
+  },
+  {
+    "korean":"유지하다",
+    "russian":"поддерживать",
+    "english":"To maintain",
+    "example":"근로자는 임금을 통해 생계를 유지한다."
+  },
+  {
+    "korean":"조선",
+    "russian":"судостроение",
+    "english":"Shipbuilding",
+    "example":"한국의 조선 산업은 세계적인 경쟁력을 갖추고 있다."
+  },
+  {
+    "korean":"철강",
+    "russian":"чёрные металлы",
+    "english":"Steel",
+    "example":"철강 산업은 자동차와 건설 산업에 필수적이다."
+  },
+  {
+    "korean":"기계",
+    "russian":"техника",
+    "english":"Machinery",
+    "example":"기계 산업은 다양한 제조업의 기반이 된다."
+  },
+  {
+    "korean":"석유화학 제품",
+    "russian":"нефтехим. продукция",
+    "english":"Petrochemical products",
+    "example":"한국은 석유화학 제품을 대량으로 수출한다."
+  },
+  {
+    "korean":"제조업",
+    "russian":"промышленность",
+    "english":"Manufacturing industry",
+    "example":"반도체와 자동차는 한국 제조업의 대표 분야다."
+  },
+  {
+    "korean":"자영업자",
+    "russian":"инд. предприниматель",
+    "english":"Self-employed person",
+    "example":"많은 자영업자가 음식점과 편의점을 운영한다."
+  },
+  {
+    "korean":"취업자",
+    "russian":"трудящийся",
+    "english":"Worker",
+    "example":"한국의 전체 취업자 중 20% 이상이 자영업자다."
+  },
+  {
+    "korean":"마련하다",
+    "russian":"создавать\/устраивать",
+    "english":"To prepare\/arrange",
+    "example":"정부는 근로자 보호를 위한 제도를 마련했다."
+  },
+  {
+    "korean":"최저임금제",
+    "russian":"система минимальной зарплаты",
+    "english":"Minimum wage system",
+    "example":"최저임금제는 근로자의 기본 생활을 보장한다."
+  },
+  {
+    "korean":"원칙적",
+    "russian":"принципиально",
+    "english":"Principally",
+    "example":"한국은 주 40시간 근무를 원칙적으로 정해 놓았다."
+  },
+  {
+    "korean":"허용하다",
+    "russian":"разрешать",
+    "english":"To permit",
+    "example":"법은 주 12시간 이내의 추가 근로만 허용한다."
+  },
+  {
+    "korean":"조합",
+    "russian":"профсоюз",
+    "english":"Union",
+    "example":"노동 조합은 근로자의 권익을 보호한다."
+  },
+  {
+    "korean":"단결권",
+    "russian":"право на объединение",
+    "english":"Right to unionize",
+    "example":"근로자는 헌법에 따라 단결권을 가진다."
+  },
+  {
+    "korean":"조건",
+    "russian":"условия",
+    "english":"Conditions",
+    "example":"단체교섭은 근로 조건을 개선하기 위해 진행된다."
+  },
+  {
+    "korean":"단체교섭권",
+    "russian":"право на переговоры",
+    "english":"Right to collective bargaining",
+    "example":"노조는 사용자와 단체교섭권을 행사할 수 있다."
+  },
+  {
+    "korean":"쟁의행위",
+    "russian":"коллективный протест",
+    "english":"Collective protest",
+    "example":"교섭이 결렬되면 노조는 쟁의행위를 할 수 있다."
+  },
+  {
+    "korean":"정년퇴임",
+    "russian":"обязательная пенсионная отставка",
+    "english":"Mandatory retirement",
+    "example":"자영업은 정년퇴임 없이 계속 일할 수 있다."
+  },
+  {
+    "korean":"중장년층",
+    "russian":"средний возраст",
+    "english":"Middle-aged group",
+    "example":"중장년층 창업이 증가하고 있다."
+  },
+  {
+    "korean":"창업",
+    "russian":"предпринимательская деятельность",
+    "english":"Start-up\/entrepreneurship",
+    "example":"퇴직 후 카페 창업을 선택하는 사람이 많다."
+  },
+  {
+    "korean":"상호",
+    "russian":"торговая марка",
+    "english":"Trade name",
+    "example":"프랜차이즈는 동일한 상호를 사용한다."
+  },
+  {
+    "korean":"상표",
+    "russian":"торговый знак",
+    "english":"Trademark",
+    "example":"가맹점은 본부의 상표를 사용해 제품을 판매한다."
+  },
+  {
+    "korean":"가맹",
+    "russian":"франшиза",
+    "english":"Franchise",
+    "example":"가맹 계약을 맺고 로열티를 납부한다."
+  },
+  {
+    "korean":"본부",
+    "russian":"главный офис",
+    "english":"Headquarters",
+    "example":"가맹 본부는 광고와 물류를 지원한다."
+  },
+  {
+    "korean":"해당제품",
+    "russian":"указанный продукт",
+    "english":"Designated product",
+    "example":"가맹점은 본부가 공급하는 해당제품만 판매한다."
+  },
+  {
+    "korean":"대기",
+    "russian":"плата\/взнос",
+    "english":"Fee\/contribution",
+    "example":"가맹점은 본부에 일정한 대기를 납부한다."
+  },
+  {
+    "korean":"판결",
+    "russian":"решение суда",
+    "english":"Court decision",
+    "example":"2015년 대법원 판결은 외국인 노동조합을 합법화했다."
+  },
+  {
+    "korean":"합법",
+    "russian":"законный",
+    "english":"Legal",
+    "example":"외국인 노동조합 설립은 합법으로 인정되었다."
+  },
+  {
+    "korean":"설립",
+    "russian":"создание",
+    "english":"Establishment",
+    "example":"근로자는 자유롭게 노조를 설립할 수 있다."
+  },
+  {
+    "korean":"운영하다",
+    "russian":"функционирование",
+    "english":"To operate",
+    "example":"노조는 조합비로 조직을 운영한다."
+  },
+  {
+    "korean":"보상하다",
+    "russian":"возмещать",
+    "english":"To compensate",
+    "example":"산업재해보상보험이 사고 피해를 보상한다."
+  }
+]
