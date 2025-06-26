@@ -336,6 +336,35 @@
             color: #2d3748;
         }
 
+        .study-answers {
+            margin: 30px 0;
+        }
+
+        .study-answer {
+            background: linear-gradient(135deg, #f7fafc, #edf2f7);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 5px solid #5a67d8;
+        }
+
+        .answer-label {
+            font-weight: bold;
+            color: #5a67d8;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .answer-text {
+            font-size: 1.3em;
+            color: #2d3748;
+            font-weight: 500;
+        }
+
+        .study-answer.hidden {
+            display: none;
+        }
+
         @media (max-width: 768px) {
             .options {
                 grid-template-columns: 1fr;
@@ -360,11 +389,18 @@
 
         <div id="mainMenu" class="main-menu">
             <div class="mode-selector">
-                <h3>📚 학습 모드 선택</h3>
+                <h3>📚 학습 타입 선택</h3>
+                <div class="mode-buttons">
+                    <button class="mode-btn active" data-type="study">📖 학습하기</button>
+                    <button class="mode-btn" data-type="test">📝 시험보기</button>
+                </div>
+            </div>
+
+            <div class="mode-selector" id="languageModeSelector">
+                <h3>🌍 언어 모드 선택</h3>
                 <div class="mode-buttons">
                     <button class="mode-btn active" data-mode="russian">🇷🇺 러시아어</button>
                     <button class="mode-btn" data-mode="english">🇺🇸 영어</button>
-                    <button class="mode-btn" data-mode="both">🌍 둘 다</button>
                 </div>
             </div>
 
@@ -387,6 +423,29 @@
             </div>
 
             <button class="start-btn" id="startBtn">학습 시작</button>
+        </div>
+
+        <div id="studyContainer" class="quiz-container">
+            <div class="quiz-header">
+                <button class="back-btn" id="studyBackBtn">← 돌아가기</button>
+                <div class="quiz-progress" id="studyProgress">1 / 20</div>
+            </div>
+
+            <div class="korean-word" id="studyKoreanWord">loading...</div>
+            <div class="example-sentence" id="studyExampleSentence">예문이 여기에 표시됩니다.</div>
+
+            <div class="study-answers" id="studyAnswersContainer">
+                <div class="study-answer" id="studyRussianAnswer">
+                    <div class="answer-label">🇷🇺 러시아어:</div>
+                    <div class="answer-text" id="studyRussianText">-</div>
+                </div>
+                <div class="study-answer" id="studyEnglishAnswer">
+                    <div class="answer-label">🇺🇸 영어:</div>
+                    <div class="answer-text" id="studyEnglishText">-</div>
+                </div>
+            </div>
+
+            <button class="next-btn" id="studyNextBtn">다음 단어</button>
         </div>
 
         <div id="quizContainer" class="quiz-container">
@@ -442,6 +501,7 @@
 
         // 앱 상태
         let currentMode = 'russian';
+        let currentType = 'study'; // 'study' 또는 'test'
         let selectedDay = 1; // 기본값을 1로 설정
         let currentWords = [];
         let currentQuestionIndex = 0;
@@ -625,6 +685,23 @@
             updateDayDisplay();
         }
 
+        // 타입 선택 (학습하기 vs 시험보기)
+        document.querySelectorAll('[data-type]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('[data-type]').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentType = btn.dataset.type;
+                
+                // 시험보기일 때만 언어 모드 선택 보이기
+                const languageSelector = document.getElementById('languageModeSelector');
+                if (currentType === 'test') {
+                    languageSelector.style.display = 'block';
+                } else {
+                    languageSelector.style.display = 'none';
+                }
+            });
+        });
+
         // 모드 선택
         document.querySelectorAll('.mode-btn').forEach(btn => {
             btn.addEventListener('click', () => {
@@ -659,9 +736,14 @@
                 correctAnswers = 0;
 
                 document.getElementById('mainMenu').style.display = 'none';
-                document.getElementById('quizContainer').style.display = 'block';
                 
-                showQuestion();
+                if (currentType === 'study') {
+                    document.getElementById('studyContainer').style.display = 'block';
+                    showStudyWord();
+                } else {
+                    document.getElementById('quizContainer').style.display = 'block';
+                    showQuestion();
+                }
                 
             } catch (error) {
                 console.error('데이터 로드 실패:', error);
@@ -672,10 +754,29 @@
                 correctAnswers = 0;
 
                 document.getElementById('mainMenu').style.display = 'none';
-                document.getElementById('quizContainer').style.display = 'block';
                 
-                showQuestion();
+                if (currentType === 'study') {
+                    document.getElementById('studyContainer').style.display = 'block';
+                    showStudyWord();
+                } else {
+                    document.getElementById('quizContainer').style.display = 'block';
+                    showQuestion();
+                }
             }
+        }
+
+        // 학습하기 모드 - 단어 표시
+        function showStudyWord() {
+            const word = currentWords[currentQuestionIndex];
+            const totalWords = currentWords.length;
+            
+            document.getElementById('studyProgress').textContent = `${currentQuestionIndex + 1} / ${totalWords}`;
+            document.getElementById('studyKoreanWord').textContent = word.korean;
+            document.getElementById('studyExampleSentence').textContent = word.example;
+            
+            // 정답 표시
+            document.getElementById('studyRussianText').textContent = word.russian;
+            document.getElementById('studyEnglishText').textContent = word.english;
         }
 
         // 문제 표시
@@ -703,17 +804,9 @@
             if (currentMode === 'russian') {
                 correctAnswer = correctWord.russian;
                 wrongAnswers = getRandomWords(additionalRussianWords, 3);
-            } else if (currentMode === 'english') {
+            } else { // english
                 correctAnswer = correctWord.english;
                 wrongAnswers = getRandomWords(additionalEnglishWords, 3);
-            } else { // both
-                if (Math.random() < 0.5) {
-                    correctAnswer = correctWord.russian;
-                    wrongAnswers = getRandomWords(additionalRussianWords, 3);
-                } else {
-                    correctAnswer = correctWord.english;
-                    wrongAnswers = getRandomWords(additionalEnglishWords, 3);
-                }
             }
 
             // 선택지 배열 생성 및 섞기
@@ -762,7 +855,25 @@
             }
         });
 
-        // 결과 표시
+        // 학습하기 - 다음 단어
+        document.getElementById('studyNextBtn').addEventListener('click', () => {
+            currentQuestionIndex++;
+            
+            if (currentQuestionIndex < currentWords.length) {
+                showStudyWord();
+            } else {
+                showStudyResult();
+            }
+        });
+
+        // 학습하기 - 돌아가기
+        document.getElementById('studyBackBtn').addEventListener('click', () => {
+            document.getElementById('studyContainer').style.display = 'none';
+            document.getElementById('mainMenu').style.display = 'block';
+            updateDayDisplay();
+        });
+
+        // 결과 표시 (시험보기용)
         function showResult() {
             const percentage = Math.round((correctAnswers / currentWords.length) * 100);
             
@@ -789,6 +900,26 @@
             else message = '더 연습해보세요! 💪';
             
             document.getElementById('resultMessage').textContent = message;
+        }
+
+        // 학습하기 결과 표시
+        function showStudyResult() {
+            // 학습하기는 100% 완료로 처리
+            const percentage = 100;
+            
+            // 진도 업데이트
+            dayProgress[selectedDay].progress = percentage;
+            dayProgress[selectedDay].rounds++;
+            saveProgress();
+
+            // 학습 완료 알림 전송
+            sendStudyResult(selectedDay, percentage, currentWords.length, currentWords.length);
+
+            document.getElementById('studyContainer').style.display = 'none';
+            document.getElementById('resultContainer').style.display = 'block';
+            
+            document.getElementById('resultScore').textContent = `학습 완료!`;
+            document.getElementById('resultMessage').textContent = `${currentWords.length}개 단어 학습을 완료했습니다! 🎉`;
         }
 
         // 학습 결과를 서버로 전송 (카카오톡 알림용)
@@ -849,6 +980,9 @@
         function initApp() {
             loadProgress();
             updateDayDisplay(); // Day 선택기 초기화
+            
+            // 기본적으로 학습하기 모드이므로 언어 모드 선택 숨기기
+            document.getElementById('languageModeSelector').style.display = 'none';
         }
 
         // 앱 시작
